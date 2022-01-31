@@ -1,0 +1,117 @@
+footer {
+    background-color: #F5F5F4;
+    padding: 50px 0 10px;
+}
+footer > .row {
+    margin-bottom: 0;
+}
+.footer-contents-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 30px;
+}
+.footer-content-block {
+    padding: 20px;
+}
+img.footer-logo {
+    max-width: 180px;
+}
+h4.footer-sec-title {
+    color: #231F20;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--pry-font);
+    letter-spacing: -1.2px;
+}
+.footer-sec-content {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6E7883;
+}
+.inq.tel-inq {
+    margin-top: 5px;
+}
+.inq.tel-inq ul {
+    margin-top: 0;
+}
+.inq.tel-inq ul li {
+    padding: 3px 0;
+    display: flex;
+    align-items: center;
+}
+.inq.tel-inq ul li img {
+    margin-right: 5px;
+}
+.inq a {
+    color: #6E7883;
+}
+.footer-social-wrapper {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 31px;
+    color: #4D4A6F;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 180px;
+}
+.footer-social-wrapper a {
+    color: #777777;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-credit-wrapper {
+    font-size: 14px;
+    line-height: 21px;
+ }
+.footer-credit-wrapper .copyright-div {
+    border-top: 1px solid rgba(158, 158, 158, 0.5);
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.footer-sub-wrapper.flex-div {
+    color: #353D46;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+ul.inq-list li {
+    padding: 5px 0;
+}
+ul.inq-list li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+}
+
+@media(max-width: 992px) {
+    .footer-contents-wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px ​30px;
+    }
+    .footer-content-block {
+        padding: 10px;
+    }
+}
+@media(max-width: 600px) {
+    footer {
+        padding: 50px 30px 10px;
+    }
+    .footer-contents-wrapper{
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+    }
+    .footer-content-block {
+        padding: 0;
+    }
+    .footer-sub-wrapper.flex-div {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}

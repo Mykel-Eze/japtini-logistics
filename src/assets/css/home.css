@@ -1,0 +1,54 @@
+/* Home section */
+section#home {
+    height: 80vh;
+    min-height: 550px;
+}
+.home-title-wrapper {
+    background: #F4FBFD;
+    border-radius: 0px 48px 48px 0px;
+    padding: 30px 0 20px;
+    position: relative;
+    top: 15%;
+}
+.home-title-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -25%;
+    background: #F4FBFD;
+}
+.home-title-block {
+    max-width: 620px;
+    position: relative;
+}
+h1.home-title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 55px;
+    margin: 0;
+}
+p.home-title-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+}
+.bold-txt.top-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #353D46;
+    margin-bottom: 20px;
+}
+img.home-section-img {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: -20%;
+}
+
+@media(max-width: 992px) {}
+@media(max-width: 600px){}
+/* end of Home section */
