@@ -1,8 +1,8 @@
 <template>
     <div id="main-wrapper">
         <section class="error-container">
-            <div class="row">
-                <div class="container">
+            <div class="row full-height">
+                <div class="container full-height">
                     <div class="error-block center">
                         <img src="../assets/images/404.svg" alt="error 404" class="error-code-img">
                         <p class="error-description">Page not found</p>
@@ -47,7 +47,7 @@ p.error-description {
     margin: 30px 0;
 }
 button.error-action-btn {
-    background: #25A9E0;
+    background: var(--pry-color);
     border-radius: 8px;
     border: none;
     font-weight: 500;
@@ -60,7 +60,15 @@ button.error-action-btn {
 }
 @media(min-height: 960px) {
     .error-container {
-        min-height: 50vh;
+        min-height: 1330px;
+        height: 100%;
+    }
+    .error-block {
+        padding: 15px;
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        left: 50%;
     }
     /* .error-block {
         position: relative;
