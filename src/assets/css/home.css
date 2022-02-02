@@ -135,8 +135,32 @@ img.arrow-down {
     50% {transform: translateY(0px);} 
     100% {transform: translateY(-10px);} 
 }
-@media(max-width: 992px) {}
-@media(max-width: 600px){}
+@media(max-width: 992px) {
+    .home-title-wrapper {
+        width: 90%;
+    }
+    .home-sub-img-wrapper {
+        height: 30%;
+    }
+    .square-boxes-grid {
+        width: 25%;
+        height: 34%;
+    }
+}
+@media(max-width: 600px){
+    .home-title-wrapper {
+        width: 100%;
+    }
+    .home-sub-img-wrapper {
+        height: 25%;
+        width: 80%;
+        bottom: calc(5% - 1px);
+    }
+    .square-boxes-grid {
+        width: 35%;
+        height: 25%;
+    }
+}
 /* end of Home section */
 
 /* About Section */
@@ -191,6 +215,11 @@ h4.services-block-title {
     color: #161616;
 }
 
+@media(max-width: 992px) {
+    .services-block-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media(max-width: 600px) {
     .services-block-wrapper {
         grid-template-columns: 100%;
@@ -222,16 +251,25 @@ section#logistics-routes {
     z-index: 1;
     vertical-align: bottom;
 }
-.logisitcs-routes-txt .section-header {
-    margin-top: 0;
-}
 ul.custom-list li {
     font-size: 20px;
-    line-height: 60px;
+    line-height: 24px;
     color: #161616;
+    margin-bottom: 22px;
 }
 img.tick-icon {
     width: 50px;
+}
+
+@media(min-width: 993px) {
+    .logisitcs-routes-txt .section-header {
+        margin-top: 0;
+    }
+}
+@media(max-width: 600px) {
+    section#logistics-routes {
+        margin: 0;
+    }
 }
 /* end of Logistics-Routes Section */
 
@@ -408,3 +446,31 @@ button.submit-btn.btn.pry-btn {
     border-radius: 0 5px 5px 0;
 }
 /* end of Contact-Support Section */
+
+@media(max-width: 600px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.text-section {
+        padding: 10px 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .cv-img-side, .wwa-img-side {
+        min-height: 350px;
+    }
+    h2.section-header {
+        font-size: 46px;
+    }
+    h1.page-title {
+        font-size: 54px;
+    }
+    img.header-square-icon {
+        width: 50px;
+        border-bottom-right-radius: 24px;
+    }
+    p.section-desc {
+        font-size: 18px;
+    }
+}
