@@ -41,6 +41,31 @@
     </section>
     <!--=== end of Who-We-Are Section ===-->
 
+    <!--=== Vision-Mission Section ===-->
+    <section id="vision-mission">
+        <div class="row">
+            <div class="container">
+                <div class="vision-mission-wrapper">
+                  <div class="vision-mission-block">
+                      <div class="section-title">OUR VISION</div>
+                      <p class="section-desc">
+                          To be positioned as the primary solution for addressing logistical challenges in the supply chain 
+                          while ensuring the delivery of the product to the end consumers.
+                      </p>
+                  </div>
+                  <div class="vision-mission-block">
+                      <div class="section-title">OUR MISSION</div>
+                      <p class="section-desc">
+                          Using tech-solution to reduce logistical inefficiencies in the supply chain while creating an 
+                          ecosystem that provides the most efficient delivery of products to any part of the world.
+                      </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=== end of Vision-Mission Section ===-->
+
     <!--=== Why-We-Do Section ===-->
     <section id="why-we-do">
       <div class="row">
