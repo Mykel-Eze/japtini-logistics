@@ -94,11 +94,14 @@
                         <input type="text" name="company_name" id="company_name" placeholder="Company Name (Optional)" />
                     </div>
                     <div class="input-field">
-                        <select name="country_code" id="country_code">
-                            <option value="Nigeria (+234)">Nigeria (+234)</option>
-                            <option value="Ghana (+233)">Ghana (+233)</option>
-                            <option value="USA (+1)">USA (+1)</option>
-                        </select>
+                        <div class="rel">
+                            <select name="country_code" id="country_code">
+                                <option value="Nigeria (+234)">Nigeria (+234)</option>
+                                <option value="Ghana (+233)">Ghana (+233)</option>
+                                <option value="USA (+1)">USA (+1)</option>
+                            </select>
+                            <img src="../assets/images/caret.svg" alt="caret" class="caret-icon">
+                        </div>
                         <input type="tel" name="phone" id="phone" placeholder="Phone number" required />
                     </div>
                     <div class="input-field">
@@ -158,5 +161,8 @@ form#partnership-form input {
     margin: 0;
     padding: 0 15px;
     box-shadow: none;
+}
+.dropdown-content li>a, .dropdown-content li>span {
+    color: var(--pry-color) !important;
 }
 </style>

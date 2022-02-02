@@ -68,6 +68,12 @@ label#checkbox-wrapper span {
     line-height: 46px;
     border-radius: 10px;
 }
+img.caret-icon {
+    position: absolute;
+    top: 26px;
+    z-index: 10;
+    right: 20px;
+}
 
 @media(min-width: 993px) {
     section#vehicle-owners-partners h2.section-header {
