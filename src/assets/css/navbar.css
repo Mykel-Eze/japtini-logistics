@@ -215,6 +215,8 @@ button.sec-btn.btn.nav-btn.modal-trigger {
         left: 0%;
         bottom: 80px;
         border-bottom: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .sidenav li.contact-us-li button.nav-pry-btn.btn.pointer {
         width: 100%;
@@ -241,6 +243,13 @@ button.sec-btn.btn.nav-btn.modal-trigger {
         font-size: 20px;
         line-height: 29px;
         height: 49px;
+    }
+    button.btn.nav-btn.modal-trigger {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    button.btn.nav-btn.modal-trigger:not(:last-child) {
+        margin-bottom: px;
     }
 }
 @media(max-width: 600px) {
