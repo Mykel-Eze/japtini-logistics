@@ -249,7 +249,7 @@ button.sec-btn.btn.nav-btn.modal-trigger {
         width: 100%;
     }
     button.btn.nav-btn.modal-trigger:not(:last-child) {
-        margin-bottom: px;
+        margin-bottom: 5px;
     }
 }
 @media(max-width: 600px) {

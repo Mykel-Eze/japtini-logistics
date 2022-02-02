@@ -210,4 +210,7 @@ section#core-values {
         width: 50px;
         border-bottom-right-radius: 24px;
     }
+    p.section-desc {
+        font-size: 18px;
+    }
 }
