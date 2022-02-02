@@ -1,5 +1,6 @@
 <template>
   <div id="main-wrapper">
+    <!--=== Home Section ===-->
     <section id="about-home" class="external-page-banners">
       <div class="row full-height">
         <div class="container full-height">
@@ -12,7 +13,9 @@
         </div>
       </div>
     </section>
+    <!--=== end of Home Section ===-->
 
+    <!--=== Who-We-Are Section ===-->
     <section id="who-we-are">
       <div class="row">
         <div class="container">
@@ -36,7 +39,9 @@
         </div>
       </div>
     </section>
+    <!--=== end of Who-We-Are Section ===-->
 
+    <!--=== Why-We-Do Section ===-->
     <section id="why-we-do">
       <div class="row">
         <div class="container">
@@ -62,7 +67,9 @@
         </div>
       </div>
     </section>
+    <!--=== end of Why-We-Do Section ===-->
 
+    <!--=== Miling-Machine-Image Section ===-->
     <section id="milling-machine-img-section">
       <div class="row">
         <div class="container">
@@ -70,7 +77,9 @@
         </div>
       </div>
     </section>
+    <!--=== end of Miling-Machine-Image Section ===-->
 
+    <!--=== Core-Values Section ===-->
     <section id="core-values">
       <div class="row">
         <div class="container">
@@ -92,6 +101,7 @@
         </div>
       </div>
     </section>
+    <!--=== end of Core-Values Section ===-->
   </div>
 </template>
 
