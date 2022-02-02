@@ -11,7 +11,7 @@
               </h1>
               <div class="flex-div get-started-wrapper">
                 <button class="pry-btn btn home-btn">Get Started</button>
-                <button class="plain-txt-btn">Learn More</button>
+                <!-- <button class="plain-txt-btn">Learn More</button> -->
               </div>
             </div>
 
