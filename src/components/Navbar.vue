@@ -50,7 +50,7 @@
                         <button class="sec-btn btn nav-btn modal-trigger" @click="scrollToTop()">
                             <span>Track Package</span>
                         </button>
-                        <button class="pry-btn btn nav-btn modal-trigger" @click="scrollToTop()">
+                        <button class="pry-btn btn nav-btn modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
                             <span>Book a Truck</span>
                         </button>
                     </li>
@@ -99,28 +99,28 @@
             <button class="sec-btn btn nav-btn modal-trigger" @click="scrollToTop()">
                 <span>Track Package</span>
             </button>
-            <button class="pry-btn btn nav-btn modal-trigger" @click="scrollToTop()">
+            <button class="pry-btn btn nav-btn modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
                 <span>Book a Truck</span>
             </button>
         </li>
     </ul>
-
+    <BookATruck />
   </div>
 </template>
 
 <script>
+import BookATruck from '../components/BookATruckModal.vue'
 import M from "materialize-css";
-// import $ from "jquery";
-
+// import $ from "jquery"; 
 export default {
   name: "Navbar",
+  components: {
+      BookATruck
+  },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {
       var elemsSidenav = document.querySelectorAll(".sidenav");
       M.Sidenav.init(elemsSidenav)
-
-      var elemsModal = document.querySelectorAll('.modal');
-      M.Modal.init(elemsModal);
     });
   },
   methods:{

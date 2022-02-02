@@ -1,0 +1,55 @@
+.mc-wrapper {
+    width: 50%;
+    min-width: 300px;
+    margin: auto;
+}
+h3.modal-title {
+    margin-bottom: 5px;
+}
+.input-field.double-field-wrapper, .input-field.flex-div.phone-field {
+    background: #FFFFFF;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/* .input-field.flex-div.phone-field {} */
+div#modal-component .modal {
+    left: 0;
+    right: auto;
+    top: 100px !important;
+    bottom: auto;
+    width: 78%;
+    height: calc(80% + 40px);
+    max-height: 90vh;
+    border-radius: 0 24px 24px 0;
+}
+img.caret-icon {
+    position: absolute;
+    top: 26px;
+    z-index: 10;
+    right: 20px;
+}
+
+button.submit-modal-btn.btn {
+    height: 46px;
+    width: 100%;
+    border-radius: 5px;
+}
+button.submit-modal-btn.btn{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+button.submit-modal-btn.btn.sec-btn {
+    color: #231F20;
+    pointer-events: none;
+}
+button.submit-modal-btn.btn.sec-btn::before {
+    border-radius: 5px;
+}
+.input-field.submit-modal-btn-wrapper {
+    margin-top: 30px;
+}
