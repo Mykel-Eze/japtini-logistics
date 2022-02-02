@@ -47,9 +47,31 @@ img.header-square-icon {
     right: 0;
     bottom: 0;
 }
-.gray-bg {
+
+/*---=== Services Page ===---*/
+/* From Services Page */
+section.gray-bg {
     background: #F9F9F9;
+    padding: 50px 0 25px;
+    margin: 60px 0;
 }
+.img-side img {
+    width: 80%;
+}
+
+@media(max-width: 992px) {
+    .img-side img, img.dashboard-img {
+        width: 100%;
+    }
+}
+@media(max-width: 600px) {
+    section.gray-bg {
+        padding: 50px 20px 25px;
+    }
+}
+/* end of Services Page */
+
+/*---=== About Page Sections ===---*/
 
 /* Who We Are */
 section#who-we-are {

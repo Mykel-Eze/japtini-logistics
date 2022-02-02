@@ -109,10 +109,25 @@ export default {
 </script>
 
 <style src="../assets/css/about.css" scoped></style>
-<style src="../assets/css/services.css" scoped></style>
 
 <style scoped>
 .home-title-wrapper::before {
   background-image: url(../assets/images/services-page-bg.png);
+}
+
+img.dashboard-img {
+    width: 90%;
+}
+section#request-quote {
+    margin: 40px 0;
+}
+
+@media(max-width: 600px) {
+    section#warehousing-and-distribution h2.section-header {
+        margin-top: 0;
+    }
+    section#warehousing-and-distribution .img-side {
+        margin-top: 20px;
+    }
 }
 </style>
