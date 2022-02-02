@@ -47,6 +47,9 @@ img.header-square-icon {
     right: 0;
     bottom: 0;
 }
+.gray-bg {
+    background: #F9F9F9;
+}
 
 /* Who We Are */
 section#who-we-are {
