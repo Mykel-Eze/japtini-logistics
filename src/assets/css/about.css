@@ -1,0 +1,188 @@
+.home-title-wrapper {
+    height: 300px;
+}
+.home-title-block {
+    top: auto;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    max-width: initial;
+    bottom: 20px;
+}
+.home-title-wrapper::before {
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 100%;
+    top: 0;
+    left: -25%;
+    background-color: #F4FBFD;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px 24px 24px 0px;
+}
+.home-title-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 100%;
+    top: 0;
+    left: -25%;
+    background: rgba(0, 0, 0, 0.21);
+    border-radius: 0px 24px 24px 0px;
+}
+section.text-section {
+    font-size: 20px;
+    line-height: 31px;
+    color: #777777;
+    padding: 20px 0;
+}
+
+p.section-desc {
+    font-size: 20px;
+}
+
+img.header-square-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Who We Are */
+section#who-we-are {
+    margin: 100px 0 50px;
+}
+.wwa-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.wwa-img-side {
+    background-image: url(../images/fork-lift.png);
+    background-position: bottom;
+    background-size: 100%;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+}
+.wwa-txt-side {
+    padding-top: 10px;
+}
+@media(max-width: 992px) {
+    .wwa-img-side {
+        background-size: cover;
+    }
+}
+@media(max-width: 600px) {
+    .wwa-wrapper {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+}
+/* end of Who We Are */
+
+/* Why We Do */
+section#why-we-do {
+    margin: 80px 0 50px;
+    background: #F9F9F9;
+    padding: 60px 0 140px;
+}
+.wwd-top-side {
+    max-width: 450px;
+}
+.wwd-bottom-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 0;
+}
+.vertical-border {
+    height: 150px;
+    width: 12px;
+    background: #EF4133;
+    border-radius: 24px;
+    margin-right: 30px;
+}
+.money-figure-wrapper {
+    width: 100%;
+    margin-right: 40px;
+}
+@media(max-width: 992px) {
+    .wwd-bottom-side {
+        grid-template-columns: 100%;
+    }
+}
+@media(max-width: 600px) {
+    section#why-we-do {
+        margin-top: 50px;
+        padding: 40px 20px 100px;
+    }
+}
+/* end of Why We Do */
+
+/* Milling Machine Image Section */
+section#milling-machine-img-section {
+    margin-top: -170px;
+}
+/* end of Milling Machine Image Section */
+
+/* Core Values */
+section#core-values {
+    margin: 100px 0 50px;
+}
+.cv-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.cv-img-side {
+    background-image: url(../images/dashboard-screenshot.png);
+    background-position: center;
+    background-size: 100%;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+}
+.st-2 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #231F20;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+@media(max-width: 600px) {
+    .cv-wrapper {
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+    }
+}
+/* end of Core Values */
+
+@media(max-width: 992px) {
+    .external-page-banners .home-title-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    section.text-section {
+        padding: 10px 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    .cv-img-side, .wwa-img-side {
+        min-height: 350px;
+    }
+    h2.section-header {
+        font-size: 46px;
+    }
+    h1.page-title {
+        font-size: 54px;
+    }
+    img.header-square-icon {
+        width: 50px;
+        border-bottom-right-radius: 24px;
+    }
+}
