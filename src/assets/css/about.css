@@ -172,6 +172,9 @@ section#core-values {
     margin-top: 10px;
     margin-bottom: -10px;
 }
+.input-field .input-field {
+    margin: 0;
+}
 
 @media(max-width: 600px) {
     .cv-wrapper {

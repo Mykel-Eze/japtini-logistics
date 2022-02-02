@@ -30,7 +30,7 @@ span.section-header-desc {
 section#partnership-form-section {
     margin: 80px 0 50px;
 }
-form#partnership-form {
+form#form-block {
     background: #F2F2F2;
     border: 1px solid rgba(35, 31, 32, 0.1);
     box-sizing: border-box;
@@ -39,7 +39,7 @@ form#partnership-form {
     max-width: 530px;
     margin: 50px auto;
 }
-form#partnership-form .input-field {
+form#form-block .input-field {
     margin: 0.8rem auto;
 }
 label.rel {
@@ -84,7 +84,7 @@ img.caret-icon {
     section#partnership-form-section {
         margin: 50px 0 50px;
     }
-    form#partnership-form {
+    form#form-block {
         padding: 30px 30px 50px;
     }
     .intro-txt-block {

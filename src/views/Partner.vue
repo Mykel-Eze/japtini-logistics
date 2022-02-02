@@ -86,7 +86,7 @@
                     <span class="section-header-desc">Fill out the contact form and we will be sure to get back to you.</span>
                 </div>
 
-                <form action="#" id="partnership-form" class="gray-bg-form">
+                <form action="#" id="form-block" class="gray-bg-form">
                     <div class="input-field">
                         <input type="text" name="name" id="name" placeholder="Full Name" required />
                     </div>
@@ -152,7 +152,7 @@ export default {
 </style>
 
 <style>
-form#partnership-form input {
+form#form-block input {
     background: #FFFFFF;
     border: 1px solid rgba(119, 119, 119, 0.2);
     box-sizing: border-box;

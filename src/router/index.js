@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Services from '../views/Services.vue'
 import Partner from '../views/Partner.vue'
+import Contact from '../views/Contact.vue'
 
 import Error404 from '../views/Error404.vue'
 
@@ -26,6 +27,11 @@ const routes = [
     path: '/partner',
     name: 'Partner',
     component: Partner
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
   { path: '/:pathMatch(.*)*', beforeEnter: (to, from, next) => { next('/error') } },
   {
