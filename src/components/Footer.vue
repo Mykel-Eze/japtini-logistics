@@ -33,13 +33,13 @@
                       <div class="footer-sec-content">
                           <ul class="inq-list">
                                 <li>
-                                    <router-link to="#" class="">Warehousing & Distribution </router-link>
+                                    <a href="/services#warehousing-and-distribution" class="">Warehousing & Distribution </a>
                                 </li>
                                 <li>
-                                    <router-link to="#" class="">Transport Services</router-link>
+                                    <a href="/services#transport-services" class="">Transport Services</a>
                                 </li>
                                 <li>
-                                    <router-link to="#" class="">Technology</router-link>
+                                    <a href="/services#technology" class="">Technology</a>
                                 </li>
                           </ul>
                       </div>
@@ -49,10 +49,10 @@
                       <div class="footer-sec-content">
                           <ul class="inq-list">
                                 <li>
-                                    <router-link to="#" class="">About </router-link>
+                                    <router-link to="/about" class="" @click="scrollToTop()">About </router-link>
                                 </li>
                                 <li>
-                                    <router-link to="#" class="">FAQs</router-link>
+                                    <a href="/#faq" class="">FAQs</a>
                                 </li>
                                 <li>
                                     <router-link to="#" class="">Blog</router-link>

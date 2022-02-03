@@ -229,7 +229,7 @@
     </section>
     <!--=== end of Customer-Reviews Section ===-->
 
-     <!--=== Customer-Reviews Section ===-->
+     <!--=== FAQ Section ===-->
     <section id="faq">
       <div class="row">
         <div class="container">
@@ -290,7 +290,7 @@
         </div>
       </div>
     </section>
-    <!--=== end of Customer-Reviews Section ===-->
+    <!--=== end of FAQ Section ===-->
 
     <!--=== Contact-Support Section ===-->
     <section id="contact-support">

@@ -27,7 +27,7 @@
                         </router-link>
                     </li>
                     <li>
-                        <router-link to="/partner" class="modal-trigger">
+                        <router-link to="/partner" class="" @click="scrollToTop()">
                             <span>Become a Partner</span>
                         </router-link>
                     </li>
