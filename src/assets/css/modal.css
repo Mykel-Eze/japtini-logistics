@@ -189,6 +189,38 @@ button.pry-btn.btn.s-u-btn {
     height: 56px;
     width: 200px;
 }
+.close-btn-wrapper.flex-div {
+    justify-content: space-between;
+}
+
+.eq-range {
+    font-size: 23px;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--pry-color);
+    text-align: center;
+    background: #F6F6F6;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 56px;
+    margin: 20px 0;
+}
+.eq-btn-wrapper.flex-div {
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+.eq-btn-wrapper.flex-div button.btn {
+    border-radius: 5px;
+    width: 45%;
+    max-width: 200px;
+    height: 56px;
+}
+.request-call-btn.btn.sec-btn::before {
+    border-radius: 5px;
+}
 
 @media(max-width: 992px) {
     div#modal-component .modal{
@@ -243,5 +275,13 @@ button.pry-btn.btn.s-u-btn {
     .flex-div.for-updates-txt {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+    .eq-btn-wrapper.flex-div {
+        flex-direction: column;
+    }
+    .eq-btn-wrapper.flex-div button.btn {
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: initial;
     }
 }

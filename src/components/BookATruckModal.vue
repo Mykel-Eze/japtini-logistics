@@ -71,7 +71,7 @@
                             <input type="tel" id="phone_number" name="phone_number" placeholder="Phone number" />
                         </div>
                         <div class="input-field submit-modal-btn-wrapper">
-                            <button class="submit-modal-btn btn sec-btn disabled-btn">
+                            <button class="submit-modal-btn btn sec-btn disabled-btn modal-trigger modal-close" data-target="estimated-quote">
                                 <span class="rel">Request quote</span>
                             </button>
                         </div>
@@ -109,6 +109,10 @@ export default {
                 $(".submit-modal-btn").addClass("sec-btn");
                 $(".submit-modal-btn").removeClass("pry-btn");
             }
+        });
+
+        $(".submit-modal-btn").click(function(){
+            event.preventDefault();
         });
     }
 }

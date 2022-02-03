@@ -106,19 +106,21 @@
     </ul>
     <BookATruck />
     <TrackShipment />
+    <EstimatedQuote />
   </div>
 </template>
 
 <script>
 import BookATruck from '../components/BookATruckModal.vue'
 import TrackShipment from '../components/TrackShipmentModal.vue'
+import EstimatedQuote from '../components/EstimatedQuoteModal.vue'
 
 import M from "materialize-css";
 // import $ from "jquery"; 
 export default {
   name: "Navbar",
   components: {
-      BookATruck, TrackShipment
+      BookATruck, TrackShipment, EstimatedQuote
   },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {
