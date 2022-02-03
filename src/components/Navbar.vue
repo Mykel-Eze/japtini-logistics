@@ -47,7 +47,7 @@
                         </router-link>
                     </li>
                     <li class="contact-us-li">
-                        <button class="sec-btn btn nav-btn modal-trigger" @click="scrollToTop()">
+                        <button class="sec-btn btn nav-btn modal-trigger" data-target="track-shipment" @click="scrollToTop()">
                             <span>Track Package</span>
                         </button>
                         <button class="pry-btn btn nav-btn modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
@@ -96,26 +96,29 @@
             </router-link>
         </li>
         <li class="contact-us-li">
-            <button class="sec-btn btn nav-btn modal-trigger" @click="scrollToTop()">
+            <button class="sec-btn btn nav-btn sidenav-close modal-trigger" data-target="track-shipment" @click="scrollToTop()">
                 <span>Track Package</span>
             </button>
-            <button class="pry-btn btn nav-btn modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
+            <button class="pry-btn btn nav-btn sidenav-close modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
                 <span>Book a Truck</span>
             </button>
         </li>
     </ul>
     <BookATruck />
+    <TrackShipment />
   </div>
 </template>
 
 <script>
 import BookATruck from '../components/BookATruckModal.vue'
+import TrackShipment from '../components/TrackShipmentModal.vue'
+
 import M from "materialize-css";
 // import $ from "jquery"; 
 export default {
   name: "Navbar",
   components: {
-      BookATruck
+      BookATruck, TrackShipment
   },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {
@@ -132,3 +135,9 @@ export default {
 </script>
 
 <style scoped src="..\assets\css\navbar.css"></style>
+
+<style>
+.modal-opened #about-home {
+    height: 80vh;
+}
+</style>

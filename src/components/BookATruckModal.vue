@@ -110,11 +110,6 @@ export default {
                 $(".submit-modal-btn").removeClass("pry-btn");
             }
         });
-    },
-    methods: {
-        modalOpenEvent() {
-            alert("Hey")
-        }
     }
 }
 </script>

@@ -1,3 +1,10 @@
+.modal .modal-content {
+    padding: 20px 24px;
+}
+.modal::-webkit-scrollbar {
+    width: 4px;
+    display: none;
+}
 .mc-wrapper {
     width: 50%;
     min-width: 300px;
@@ -52,4 +59,184 @@ button.submit-modal-btn.btn.sec-btn::before {
 }
 .input-field.submit-modal-btn-wrapper {
     margin-top: 30px;
+}
+
+#track-shipment {
+    background-image: url(../images/map-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.flex-inp-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 56px;
+    margin-top: 10%;
+}
+.flex-inp-wrapper input {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 20px !important;
+    margin: 0 !important;
+    height: 56px !important;
+}
+button.submit-tracking-btn {
+    height: 56px;
+    width: 32%;
+    border-radius: 8px;
+    position: relative;
+    right: -1px;
+    min-width: 150px;
+}
+
+.tracking-path-wrapper {
+    background: #FFFFFF;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+    margin: 40px auto 20px;
+    padding: 15px 25px;
+    display: none;
+}
+ul.tracking-path {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+ul.tracking-path li {
+    position: relative;
+    z-index: 1;
+}
+small.tracking-time {
+    font-size: 9px;
+    color: #231F20;
+    display: block;
+}
+span.t-state {
+    font-size: 14px;
+    color: #777777;
+    display: block;
+}
+img.dotted-l-line {
+    margin-left: 15px;
+}
+span.t-area {
+    color: #231F20;
+    font-size: 12px;
+}
+span.tracking-date {
+    color: #777777;
+    opacity: 0.7;
+    display: block;
+    font-size: 11px;
+    padding-left: 15px;
+}
+span.t-node {
+    background: #FFFFFF;
+    border: 1.43px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 13px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 5px 0;
+    margin-left: 8px;
+}
+.active-point span.t-node {
+    background: var(--pry-color);
+    border-color: #EF6351;
+}
+.final-point span.t-node {
+    border-radius: 2px;
+}
+.progress-wrapper {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: 1.5px;
+    background: #D4D4D4;
+    left: 15px;
+    top: 22px;
+    z-index: 0;
+}
+.progress-line {
+    background-color: var(--pry-color);
+    height: 100%;
+}
+.updates-signup-wrapper {
+    margin-top: 40px;
+    display: none;
+}
+.updates-signup-wrapper > .flex-div {
+    justify-content: end;
+}
+.flex-div.for-updates-txt {
+    color: #231F20;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+.flex-div.for-updates-txt span {
+    margin-right: 5px;
+}
+button.pry-btn.btn.s-u-btn {
+    border-radius: 5px;
+    height: 56px;
+    width: 200px;
+}
+
+@media(max-width: 992px) {
+    div#modal-component .modal{
+        width: 90%;
+    }
+    ul.tracking-path {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+    ul.tracking-path li {
+        margin: 5px 0;
+    }
+    span.t-node {
+        position: absolute;
+        top: 0;
+        left: -40px;
+    }
+    .progress-wrapper {
+        width: 1.5px;
+        height: calc(100% - 15px);
+        left: 13px;
+        top: 12px;
+    }
+}
+@media(max-width: 600px) {
+    div#modal-component .modal{
+        width: 95%;
+    }
+    h3.modal-title {
+        font-size: 52px;
+    }
+    .flex-div.flex-inp-wrapper {
+        flex-direction: column;
+        height: auto;
+        background: transparent;
+        border: none;
+    }
+    .flex-div.flex-inp-wrapper input {
+        background: #FFFFFF !important;
+        border: 1px solid #D4D4D4 !important;
+        box-sizing: border-box !important;
+        border-radius: 8px !important;
+    }
+    button.submit-tracking-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .updates-signup-wrapper > .flex-div {
+        flex-direction: column;
+    }
+    .flex-div.for-updates-txt {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }

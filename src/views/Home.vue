@@ -10,7 +10,7 @@
                 Using digital technology to solve logistical inefficiencies for businesses
               </h1>
               <div class="flex-div get-started-wrapper">
-                <button class="pry-btn btn home-btn">Get Started</button>
+                <button class="pry-btn btn home-btn modal-trigger" data-target="book-a-truck">Get Started</button>
                 <!-- <button class="plain-txt-btn">Learn More</button> -->
               </div>
             </div>
@@ -136,7 +136,9 @@
               boundaries, or even company status. 
             </p>
             <div class="partner-btn-wrapper">
-              <button class="btn pry-btn partner-btn">Become a Partner</button>
+              <router-link to="/partner" @click="scrollToTop()">
+                <button class="btn pry-btn partner-btn">Become a Partner</button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -319,6 +321,11 @@ export default {
   mounted() {
     var elemsCollapsible = document.querySelectorAll('.collapsible');
     M.Collapsible.init(elemsCollapsible)
+  },
+  methods:{
+    scrollToTop() {
+        window.scrollTo(0, 0);
+    }
   }
 }
 </script>
