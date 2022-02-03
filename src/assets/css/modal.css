@@ -221,6 +221,18 @@ button.pry-btn.btn.s-u-btn {
 .request-call-btn.btn.sec-btn::before {
     border-radius: 5px;
 }
+img.back-arrow {
+    margin-right: 5px;
+}
+.modal-back-wrapper {
+    cursor: pointer;
+}
+button.signup-btn.btn.pry-btn {
+    width: 200px;
+    height: 56px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
 @media(max-width: 992px) {
     div#modal-component .modal{

@@ -1,9 +1,9 @@
 <template>
     <div id="modal-component">
-        <div id="estimated-quote" class="modal">
+        <div id="request-success" class="modal">
             <div class="modal-content">
                 <div class="close-btn-wrapper flex-div">
-                    <div class="modal-back-wrapper modal-trigger modal-close" data-target="book-a-truck">
+                    <div class="modal-back-wrapper modal-trigger modal-close" data-target="estimated-quote">
                         <img src="../assets/images/back-arr.svg" alt="back" class="back-arrow">
                         <span>Back</span>
                     </div>
@@ -11,19 +11,17 @@
                 </div>
                 <div class="mc-wrapper mc-w-2">
                     <div class="modal-title-wrapper center">
-                        <h3 class="modal-title">Estimated quote</h3>
-                        <span class="modal-title-desc">Yaba, Lagos — Wuse II, Abuja</span>
+                        <img src="../assets/images/success-modal-img.svg" alt="success" class="success-icon">
+                        <h3 class="modal-title">We got your request</h3>
                     </div>
-                    <div id="eq-block">
-                        <div class="eq-range">₦500,000 - ₦550,000 </div>
-                        <div class="eq-btn-wrapper flex-div">
-                            <button class="signup-btn btn pry-btn">
-                                <span class="rel">Sign Up</span>
-                            </button>
-                            <button class="request-call-btn btn sec-btn modal-trigger modal-close" data-target="request-success">
-                                <span class="rel">Request a Call</span>
-                            </button>
-                        </div>
+                    <p class="modal-desc-txt center">
+                        One of our agents will reach out to you soon, you also proceed with your order by 
+                        clicking the button below
+                    </p>
+                   <div class="s-u-btn-wrapper center">
+                        <button class="signup-btn btn pry-btn modal-close">
+                            <span class="rel">Sign Up</span>
+                        </button>
                     </div>
                 </div>
             </div>
