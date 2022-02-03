@@ -108,7 +108,7 @@ import M from 'materialize-css'
 export default {
   name: 'Contact',
   mounted() {
-      var elemsSelect = document.querySelector('select');
+      var elemsSelect = document.querySelectorAll('select');
         M.FormSelect.init(elemsSelect);
   }
 }

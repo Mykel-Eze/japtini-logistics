@@ -137,7 +137,7 @@ export default {
     M.FormSelect.init(elemsSelect);
 
     var elemsScrollspy = document.querySelectorAll('.scrollspy');
-    M.Scrollspy.init(elemsScrollspy);
+    M.ScrollSpy.init(elemsScrollspy);
   }
 }
 </script>
