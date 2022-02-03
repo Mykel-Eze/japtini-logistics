@@ -36,11 +36,11 @@
                             <span>Services</span>
                         </router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link to="/blog" class="" @click="scrollToTop()">
                             <span>Blog</span>
                         </router-link>
-                    </li>
+                    </li> -->
                     <li>
                         <router-link to="/contact" class="" @click="scrollToTop()">
                             <span>Contact</span>
@@ -85,11 +85,11 @@
                 <span>Services</span>
             </router-link>
         </li>
-        <li>
+        <!-- <li>
             <router-link to="/blog" class="sidenav-close">
                 <span>Blog</span>
             </router-link>
-        </li>
+        </li> -->
         <li>
             <router-link to="/contact" class="sidenav-close">
                 <span>Contact</span>

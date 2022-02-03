@@ -55,7 +55,7 @@
                                     <a href="/#faq" class="">FAQs</a>
                                 </li>
                                 <li>
-                                    <router-link to="#" class="">Blog</router-link>
+                                    <router-link to="/contact" class="" @click="scrollToTop()">Contact</router-link>
                                 </li>
                           </ul>
                       </div>
