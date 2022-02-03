@@ -5,7 +5,7 @@
                 <div class="close-btn-wrapper right-align">
                     <img src="../assets/images/modal-close.svg" alt="modal-close" class="modal-close">
                 </div>
-                <div class="mc-wrapper">
+                <div class="mc-wrapper mc-w-2">
                     <div class="modal-title-wrapper">
                         <h3 class="modal-title">Book a Truck</h3>
                         <span class="modal-title-desc">Fill the detail below to get your estimate</span>

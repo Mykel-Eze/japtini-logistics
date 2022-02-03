@@ -113,7 +113,7 @@ export default {
 <style scoped>
 h3.modal-title {
     font-size: 72px;
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 0.02em;
     font-weight: bold;
 }

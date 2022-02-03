@@ -251,6 +251,9 @@ button.sec-btn.btn.nav-btn.modal-trigger {
     button.btn.nav-btn.modal-trigger:not(:last-child) {
         margin-bottom: 5px;
     }
+    .router-link-exact-active {
+        color: var(--pry-color);
+    }
 }
 @media(max-width: 600px) {
     nav.main-nav {

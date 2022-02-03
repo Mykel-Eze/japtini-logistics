@@ -1,5 +1,5 @@
 .modal .modal-content {
-    padding: 20px 24px;
+    height: 100%;
 }
 .modal::-webkit-scrollbar {
     width: 4px;
@@ -9,6 +9,11 @@
     width: 50%;
     min-width: 300px;
     margin: auto;
+}
+.mc-wrapper.mc-w-2 {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
 }
 h3.modal-title {
     margin-bottom: 5px;
@@ -187,7 +192,7 @@ button.pry-btn.btn.s-u-btn {
 
 @media(max-width: 992px) {
     div#modal-component .modal{
-        width: 90%;
+        width: 96%;
     }
     ul.tracking-path {
         flex-direction: column;
@@ -214,7 +219,7 @@ button.pry-btn.btn.s-u-btn {
         width: 95%;
     }
     h3.modal-title {
-        font-size: 52px;
+        font-size: 52px !important;
     }
     .flex-div.flex-inp-wrapper {
         flex-direction: column;
