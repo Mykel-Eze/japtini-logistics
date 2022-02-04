@@ -172,15 +172,15 @@ img.arrow-down {
 }
 h2.section-header {
     font-weight: bold;
-    font-size: 70px;
-    line-height: 90.8%;
+    font-size: 50px;
+    line-height: 0.95;
     color: #161616;
-    max-width: 885px;
+    max-width: 620px;
     margin: 30px auto;
 }
 p.section-desc {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -0.01em;
     color: #777777;
 }
@@ -194,7 +194,7 @@ p.section-desc {
     margin: 50px 0;
 }
 .services-block {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 28px;
     letter-spacing: -0.01em;
     color: #777777;
@@ -204,8 +204,14 @@ p.section-desc {
     box-sizing: border-box;
     border-radius: 10px;
 }
+.theme-dark .services-block {
+    background-color: #161616;
+}
 .services-block:nth-child(even) {
     background: #FEF4E8;
+}
+.theme-dark .services-block:nth-child(even) {
+    background: #000000;
 }
 h4.services-block-title {
     font-weight: 600;
@@ -213,6 +219,9 @@ h4.services-block-title {
     line-height: 33px;
     align-items: center;
     color: #161616;
+}
+.theme-dark h4.services-block-title {
+    color: #F5F5F4;
 }
 
 @media(max-width: 992px) {
@@ -246,6 +255,9 @@ section#logistics-routes {
     top: 0;
     background-color: #F5F5F4;
 }
+.theme-dark .lorries-img-div::before {
+    background-color: #000000;
+}
 .lorries-img {
     position: relative;
     z-index: 1;
@@ -257,6 +269,9 @@ ul.custom-list li {
     color: #161616;
     margin-bottom: 22px;
 }
+.theme-dark ul.custom-list li {
+    color: white;
+}
 img.tick-icon {
     width: 50px;
 }
@@ -264,6 +279,9 @@ img.tick-icon {
 @media(min-width: 993px) {
     .logisitcs-routes-txt .section-header {
         margin-top: 0;
+        max-width: 400px;
+        margin-left: 0;
+        line-height: 1;
     }
 }
 @media(max-width: 600px) {
@@ -275,7 +293,10 @@ img.tick-icon {
 
 /* Become-A-Partner Section */
 section#become-a-partner h2.section-header {
-    max-width: 1005px;
+    max-width: 785px;
+}
+section#become-a-partner p.section-desc {
+    font-size: 20px;
 }
 button.btn.pry-btn.partner-btn {
     width: 200px;
@@ -360,7 +381,7 @@ img.customer-img {
 
 /* FAQ Section */
 section#faq {
-    margin: 50px 0;
+    margin: 80px 0 50px;
 }
 #faq h2.section-header {
     max-width: 950px;
@@ -401,12 +422,20 @@ section#faq {
     font-weight: 500;
     border: none;
 }
+.theme-dark #faq .collapsible-header {
+    background-color: #111111;
+    color: white;
+}
 #faq .collapsible-body {
     padding: 1rem;
     border: none;
 }
 #faq ul.collapsible > li.active, #faq ul.collapsible > li.active > .collapsible-header {
     background: #FEF4E8;
+}
+.theme-dark #faq ul.collapsible > li.active, 
+.theme-dark #faq ul.collapsible > li.active > .collapsible-header {
+    background: #000;
 }
 p.faq-answer {
     margin-top: 0;
@@ -416,6 +445,9 @@ p.faq-answer {
 }
 
 @media(max-width: 600px) {
+    section#faq {
+        margin: 50px 0;
+    }
     #faq ul.collapsible {
         width: 100%;
     }
@@ -461,7 +493,7 @@ button.submit-btn.btn.pry-btn {
         min-height: 350px;
     }
     h2.section-header {
-        font-size: 46px;
+        font-size: 36px;
     }
     h1.page-title {
         font-size: 54px;

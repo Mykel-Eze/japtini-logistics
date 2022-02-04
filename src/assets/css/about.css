@@ -55,6 +55,9 @@ section.gray-bg {
     padding: 50px 0 25px;
     margin: 60px 0;
 }
+.theme-dark section.gray-bg{
+    background-color: #222222;
+}
 .img-side img {
     width: 80%;
 }
@@ -119,6 +122,9 @@ section#vision-mission {
     border-left: 4px solid #F6921E;
     padding-left: 40px;
 }
+.theme-dark .section-title {
+    color: white;
+}
 @media(max-width: 600px) {
     section#vision-mission {
         margin: 50px 0 20px;
@@ -135,6 +141,9 @@ section#why-we-do {
     margin: 80px 0 50px;
     background: #F9F9F9;
     padding: 60px 0 140px;
+}
+.theme-dark section#why-we-do {
+    background: #222222;
 }
 .wwd-top-side {
     max-width: 450px;
@@ -189,6 +198,9 @@ section#core-values {
     background-size: 100%;
     border-radius: 24px;
     background-repeat: no-repeat;
+}
+.theme-dark .cv-img-side {
+    background-image: url(../images/dashboard-screenshot-white.png);
 }
 .st-2 {
     font-size: 16px;

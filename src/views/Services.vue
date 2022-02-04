@@ -121,6 +121,9 @@ img.dashboard-img {
 section#request-quote {
     margin: 40px 0;
 }
+section#request-quote .section-title {
+    color: #777777;
+}
 
 @media(max-width: 600px) {
     section#warehousing-and-distribution h2.section-header {

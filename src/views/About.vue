@@ -78,7 +78,8 @@
           </div>
           <div class="wwd-bottom-side">
             <div class="money-figure-wrapper">
-              <img src="../assets/images/money-figure.svg" alt="22 trillion naira" class="money-figure">
+              <img src="../assets/images/money-figure.svg" alt="22 trillion naira" class="money-figure light-mode-item">
+              <img src="../assets/images/money-figure-white.svg" alt="22 trillion naira" class="money-figure dark-mode-item">
             </div>
             <div class="wwd-quote-block flex-div">
               <div class="vertical-border"></div>

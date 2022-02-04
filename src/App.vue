@@ -21,6 +21,7 @@ export default {
 
 <style src=".\assets\css\fonts.css"></style>
 <style src=".\assets\css\styles.css"></style>
+<style src=".\assets\css\theme.css"></style>
 
 <style>
 div#nav {

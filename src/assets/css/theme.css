@@ -1,0 +1,62 @@
+.theme-dark body {
+    background-color: #111111;
+    color: white;
+}
+
+.theme-dark nav.main-nav {
+    background-color: #111111;
+}
+.light-mode-btn {
+    display: none;
+}
+.dark-mode-btn {
+    display: block;
+}
+.theme-dark .light-mode-btn {
+    display: block;
+}
+.theme-dark .dark-mode-btn {
+    display: none;
+}
+.theme-dark nav.main-nav ul > li > a {
+    color: white;
+}
+.dark-mode-item {
+    display: none;
+}
+.theme-dark .dark-mode-item {
+    display: block;
+}
+.theme-dark img.dark-mode-item {
+    display: initial;
+}
+.theme-dark .light-mode-item {
+    display: none;
+}
+
+.theme-dark h2.section-header, .theme-dark p.section-desc b {
+    color: white;
+}
+
+.theme-dark .sidenav {
+    background-color: #111111;
+}
+.theme-dark .sidenav li>a {
+    color: white;
+}
+.theme-dark .sidenav li > a.router-link-exact-active {
+    color: var(--pry-color);
+}
+.sidenav li > a.router-link-exact-active > span {
+    position: relative;
+}
+.sidenav li > a.router-link-exact-active > span::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    left: -5px;
+    bottom: -3px;
+    background-image: url(../images/active-txt-icon.svg);
+    background-size: cover;
+}

@@ -20,7 +20,7 @@ ul#nav-mobile {
     display: flex;
     align-items: center;
     position: relative;
-    top: 8px;
+    top: 6px;
 }
 nav.main-nav ul > li > a{
     color: #0A0B09;
@@ -52,18 +52,20 @@ nav.main-nav.scrolled-nav ul > li > a > span {
 }
 nav.main-nav ul > li > a.router-link-exact-active > span {
     padding: 0 3px;
-    background-color: #fff;
     color: var(--sec-color);
+    position: relative;
 }
-/* nav.main-nav ul > li > a.router-link-exact-active::before {
+nav.main-nav ul > li > a.router-link-exact-active > span::before {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 2px;
-    background-color: var(--sec-color);
-    left: 0;
-    top: 50%;
-} */
+    width: 10px;
+    height: 10px;
+    left: -4px;
+    bottom: -4px;
+    background-image: url(../images/active-txt-icon.svg);
+    background-size: cover;
+}
+
 nav.main-nav ul > li > a.router-link-exact-active > button {
     color: white;
     background-color: #5893D9;
@@ -90,43 +92,6 @@ nav.scrolled-nav a.brand-logo img {
 }
 nav.scrolled-nav .brand-logo {
     top: 7px;
-}
-button.nav-pry-btn.btn, a.nav-pry-btn.btn, 
-button.nav-pry-btn-2.btn, a.nav-pry-btn-2.btn {
-    font-size: 12px;
-    border-radius: 0;
-    min-width: 100px;
-    font-weight: bold;
-    /* margin-bottom: 20px; */
-    font-family: var(--pry-font);
-    border: 1px solid var(--pry-color);
-    transition: all 1.5ms;
-    box-shadow: none;
-    text-transform: none;
-}
-button.nav-pry-btn.btn, a.nav-pry-btn.btn {
-    background: var(--pry-color);
-    color: white;
-    border-radius: 6px;
-    font-weight: 500;
-}
-button.nav-pry-btn-2.btn, a.nav-pry-btn-2.btn {
-    background-color: white;
-    color: #5893D9;
-    border: 2px solid #5893D9;
-    border-radius: 24px 0px 24px 24px;
-    box-shadow: none;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-}
-button.nav-pry-btn.btn:hover, a.nav-pry-btn.btn:hover {
-    background-color: var(--sec-color);
-    border-color: var(--sec-color);
-}
-button.nav-pry-btn-2.btn:hover, a.nav-pry-btn-2.btn:hover {
-    color: var(--sec-color);
-    border: 1px solid var(--sec-color);
 }
 
 button.nav-pry-btn.btn img {
@@ -159,9 +124,30 @@ nav .brand-logo {
     position: relative;
 }
 
+ul#nav-mobile-2 {
+    display: flex;
+    align-items: center;
+}
+.switch-container {
+    line-height: 1;
+}
 button.sec-btn.btn.nav-btn.modal-trigger {
-    margin-right: 10px;
+    margin-right: 9px;
     margin-left: 30px;
+}
+button.pry-btn.btn.nav-btn.modal-trigger {
+    margin-right: 12px;
+    margin-left: 5px;
+}
+.theme-button {
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+}
+
+.sidenav .switch-container {
+    margin-bottom: 20px;
+    /* text-align: center; */
 }
 
 @media(min-width: 993px) {}
@@ -254,6 +240,22 @@ button.sec-btn.btn.nav-btn.modal-trigger {
     .router-link-exact-active {
         color: var(--pry-color);
     }
+    /* .theme-button.light-mode-btn {
+        background-color: #f2f2f2;
+    }
+    .theme-button.dark-mode-btn {
+        background-color: #231F20;
+    } */
+    .switch-container.mobile-switch {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        margin-bottom: 0;
+    }
+    .switch-container.mobile-switch .theme-button img {
+        width: 30px;
+    }
+
 }
 @media(max-width: 600px) {
     nav.main-nav {
@@ -289,7 +291,7 @@ button.sec-btn.btn.nav-btn.modal-trigger {
     }
     .sidenav-trigger img {
         width: 30px;
-        top: 12px;
+        top: 8px;
     }
 }
 @media (max-width: 360px) {

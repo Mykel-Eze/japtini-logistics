@@ -91,7 +91,8 @@
         <div class="container">
           <div class="col s12 m6 logisitcs-routes-img">
             <div class="lorries-img-div">
-              <img src="../assets/images/lorries.png" alt="lorries" class="lorries-img full-width">
+              <img src="../assets/images/lorries.png" alt="lorries" class="lorries-img full-width light-mode-item">
+              <img src="../assets/images/lorries-dark.png" alt="lorries" class="lorries-img full-width dark-mode-item">
             </div>
           </div>
           <div class="col s12 m6 logisitcs-routes-txt">
@@ -241,8 +242,14 @@
               <div class="collapsible-header">
                 <div class="flex-div faq-question">
                   <span>Why should I use Japtini Logistics?</span>
-                  <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
-                  <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  <div class="light-mode-item">
+                    <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
+                  <div class="dark-mode-item">
+                    <img src="../assets/images/accordion-open-white.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close-white.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
                 </div>
               </div>
               <div class="collapsible-body">
@@ -257,8 +264,14 @@
               <div class="collapsible-header">
                 <div class="flex-div faq-question">
                   <span>Can you track your agents or riders?</span>
-                  <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
-                  <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  <div class="light-mode-item">
+                    <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
+                  <div class="dark-mode-item">
+                    <img src="../assets/images/accordion-open-white.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close-white.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
                 </div>
               </div>
               <div class="collapsible-body">
@@ -275,8 +288,14 @@
               <div class="collapsible-header">
                 <div class="flex-div faq-question">
                   <span>Who are your main customers for leasing vehicles?</span>
-                  <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
-                  <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  <div class="light-mode-item">
+                    <img src="../assets/images/accordion-open.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
+                  <div class="dark-mode-item">
+                    <img src="../assets/images/accordion-open-white.svg" alt="open-icon" class="accordion-open open-close-icon">
+                    <img src="../assets/images/accordion-close-white.svg" alt="close-icon" class="accordion-close open-close-icon">
+                  </div>
                 </div>
               </div>
               <div class="collapsible-body">

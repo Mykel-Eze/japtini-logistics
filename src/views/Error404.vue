@@ -4,7 +4,8 @@
             <div class="row full-height">
                 <div class="container full-height">
                     <div class="error-block center">
-                        <img src="../assets/images/404.svg" alt="error 404" class="error-code-img">
+                        <img src="../assets/images/404.svg" alt="error 404" class="error-code-img light-mode-item">
+                        <img src="../assets/images/404-white.svg" alt="error 404" class="error-code-img dark-mode-item">
                         <p class="error-description">Page not found</p>
                         <div class="error-action-btn-wrapper">
                             <router-link to="/" custom v-slot="{ navigate }">

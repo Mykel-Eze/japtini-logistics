@@ -208,13 +208,14 @@ button.btn:hover {
 .btn.pry-btn {
     background: var(--gradient);
     color: white;
+    position: relative;
 }
 .btn.sec-btn {
     background: var(--gradient);
     position: relative;
     color: #161616;
 }
-.btn.sec-btn::before {
+.btn.sec-btn::before, .btn.pry-btn:hover::before {
     position: absolute;
     content: "";
     width: calc(100% - 3px);
@@ -223,6 +224,13 @@ button.btn:hover {
     left: 1.5px;
     background-color: white;
     border-radius: 6px;
+    /* transition: background-color 1s; */
+}
+.theme-dark .btn.sec-btn::before, .theme-dark .btn.pry-btn:hover::before, .theme-light .btn.sec-btn:hover::before  {
+    background-color: #161616;
+}
+.theme-dark .btn.sec-btn:hover::before {
+    background-color: white;
 }
 .btn.nav-btn {
     height: 46px;
@@ -235,6 +243,16 @@ button.btn:hover {
 .btn.nav-btn span {
     position: relative;
     z-index: 1;
+    /* transition: color 1s; */
+}
+.theme-dark .btn.sec-btn span {
+    color: white;
+}
+.theme-dark .btn.sec-btn:hover span, .btn.pry-btn:hover span {
+    color: #161616;
+}
+.theme-dark .btn.pry-btn:hover span, .theme-light .btn.sec-btn:hover span {
+    color: #fff;
 }
 
 #app-wrapper .container {

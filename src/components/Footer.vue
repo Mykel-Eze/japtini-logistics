@@ -9,22 +9,24 @@
                       </router-link>
                       <div class="footer-social-wrapper">
                           <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/facebook.svg" alt="facebook" class="social-icons">
+                            <img src="../assets/images/facebook.svg" alt="facebook" class="social-icons light-mode-item">
+                            <img src="../assets/images/facebook-white.svg" alt="facebook" class="social-icons dark-mode-item">
                           </a>
-                          <!-- <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/instagram.svg" alt="instagram" class="social-icons">
-                          </a> -->
                           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/twitter.svg" alt="twitter" class="social-icons">
+                            <img src="../assets/images/twitter.svg" alt="twitter" class="social-icons light-mode-item">
+                            <img src="../assets/images/twitter-white.svg" alt="twitter" class="social-icons dark-mode-item">
                           </a>
                           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/instagram.svg" alt="instagram" class="social-icons">
+                            <img src="../assets/images/instagram.svg" alt="instagram" class="social-icons light-mode-item">
+                            <img src="../assets/images/instagram-white.svg" alt="instagram" class="social-icons dark-mode-item">
                           </a> 
                           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/linkedin.svg" alt="linkedin" class="social-icons">
+                            <img src="../assets/images/linkedin.svg" alt="linkedin" class="social-icons light-mode-item">
+                            <img src="../assets/images/linkedin-white.svg" alt="linkedin" class="social-icons dark-mode-item">
                           </a>
                           <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                            <img src="../assets/images/whatsapp.svg" alt="youtube" class="social-icons">
+                            <img src="../assets/images/whatsapp.svg" alt="youtube" class="social-icons light-mode-item">
+                            <img src="../assets/images/whatsapp-white.svg" alt="youtube" class="social-icons dark-mode-item">
                           </a>
                       </div>
                   </div>
