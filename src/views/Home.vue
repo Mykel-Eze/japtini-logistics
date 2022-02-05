@@ -10,7 +10,9 @@
                 Using digital technology to solve logistical inefficiencies for businesses
               </h1>
               <div class="flex-div get-started-wrapper">
-                <button class="pry-btn btn home-btn modal-trigger" data-target="book-a-truck">Get Started</button>
+                <button class="pry-btn btn home-btn modal-trigger" data-target="book-a-truck">
+                  <span class="rel">Get Started</span>
+                </button>
                 <!-- <button class="plain-txt-btn">Learn More</button> -->
               </div>
             </div>
@@ -138,7 +140,9 @@
             </p>
             <div class="partner-btn-wrapper">
               <router-link to="/partner" @click="scrollToTop()">
-                <button class="btn pry-btn partner-btn">Become a Partner</button>
+                <button class="btn pry-btn partner-btn">
+                  <span class="rel">Become a Partner</span>
+                </button>
               </router-link>
             </div>
           </div>
@@ -321,7 +325,9 @@
             <form action="#" id="contact-support-form">
               <div class="flex-div input-field">
                 <input type="email" id="email" name="email" placeholder="Your mail…" />
-                <button class="submit-btn btn pry-btn">Contact Support</button>
+                <button class="submit-btn btn pry-btn">
+                  <span class="rel">Contact Support</span>
+                </button>
               </div>
             </form>
           </div>

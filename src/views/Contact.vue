@@ -91,7 +91,9 @@
                                 </label>
                             </div>
                             <div class="submit-btn-wrapper">
-                                <div class="submit-form-btn btn pry-btn">Send MESSAGE</div>
+                                <button class="submit-form-btn btn pry-btn">
+                                    <span class="rel">Send Message</span>
+                                </button>
                             </div>
                         </form>
                     </div>

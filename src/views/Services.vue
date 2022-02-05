@@ -91,7 +91,9 @@
                     <div class="section-title">OPTIMIZED SAFE AND RELIABLE</div>
                     <h2 class="section-header">Request an <br> estimated quote</h2>
                     <div class="partner-btn-wrapper">
-                        <button class="btn pry-btn partner-btn">Book Truck</button>
+                        <button class="btn pry-btn partner-btn">
+                            <span class="rel">Book Truck</span>
+                        </button>
                     </div>
                 </div>
             </div>

@@ -118,7 +118,9 @@
                         </label>
                     </div>
                     <div class="submit-btn-wrapper">
-                        <div class="submit-form-btn btn pry-btn">Become a Partner</div>
+                        <button class="submit-form-btn btn pry-btn">
+                            <span class="rel">Become a Partner</span>
+                        </button>
                     </div>
                 </form>
             </div>
