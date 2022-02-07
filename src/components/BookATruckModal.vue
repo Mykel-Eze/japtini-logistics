@@ -56,7 +56,7 @@
                                         <option value="Bayelsa">Bayelsa</option>
                                     </select>
                                     <img src="../assets/images/caret.svg" alt="caret" class="caret-icon">
-                                    <span class="field-node"></span>
+                                    <span class="field-node active-node"></span>
                                 </div>
                                 <div class="rel" id="dfw-area-2" hidden>
                                     <select name="area_2" id="area_2">
@@ -139,8 +139,10 @@ import $ from 'jquery'
 export default {
     name: "BookATruck",
     mounted() {
-        var elemsSelect = document.querySelectorAll('select');
-        M.FormSelect.init(elemsSelect);
+        document.addEventListener('DOMContentLoaded', function() {
+            var elemsSelect = document.querySelectorAll('select');
+            M.FormSelect.init(elemsSelect);
+        });
 
         // var elemsModal = document.querySelectorAll('.modal');
         // M.Modal.init(elemsModal, {
@@ -154,12 +156,14 @@ export default {
 
         $(".batm-trigger").click(function(){
             $("html").addClass("smc-opened");
-            $("#s-modal-component.batm-smc, .smco-book-truck").addClass("opened-smc");
+            // $("#s-modal-component.batm-smc, .smco-book-truck").addClass("opened-smc");
+            $("#s-modal-component.batm-smc, .smco-book-truck").show(1500);
             window.scrollTo(0, 0);
         });
-        $(".close-bat-smc").click(function(){
+        $(".close-bat-smc, nav.main-nav ul > li > a").click(function(){
             $("html").removeClass("smc-opened");
-            $("#s-modal-component.batm-smc, .smco-book-truck").removeClass("opened-smc");
+            // $("#s-modal-component.batm-smc, .smco-book-truck").removeClass("opened-smc");
+            $("#s-modal-component.batm-smc, .smco-book-truck").hide(1500);
         })
 
         $("form#modal-form input").on("change", function(){
@@ -176,11 +180,13 @@ export default {
             $("#dfw-area-1").slideDown();
             $("#dfw-state-1").removeClass("bb")
             $(".node-line").addClass("longer-node-line");
+            $("#dfw-area-1 .field-node").addClass("active-node");
         });
         $("#dfw-state-2 select").on("change", function(){
             $("#dfw-area-2").slideDown();
             $("#dfw-state-2").removeClass("bb");
             $(".node-line").addClass("longer-node-line");
+            $("#dfw-area-2 .field-node").addClass("active-node");
         });
 
         $(".submit-modal-btn").click(function(){

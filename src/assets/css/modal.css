@@ -3,19 +3,20 @@ div#s-modal-component {
     /* background: #231F20; */
     width: 100%;
     height: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: 10;
     border-radius: 0px 48px 48px 0px;
-    transition: transform 2s;
-    transform: translateX(-110%);
+    /* transition: transform 2s;
+    transform: translateX(-110%); */
+    display: none;
 }
 #about-home div#s-modal-component {
     border-radius: 0px 24px 24px 0;
 }
-div#s-modal-component.opened-smc {
+/* div#s-modal-component.opened-smc {
     transform: translateX(0);
-}
+} */
 /* div#s-modal-component::before {
     position: absolute;
     content: "";

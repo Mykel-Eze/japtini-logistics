@@ -111,12 +111,14 @@ export default {
 
         $(".t-p-trigger").click(function(){
             $("html").addClass("smc-opened");
-            $("#s-modal-component.ts-smc, .smco-track-shipment").addClass("opened-smc");
+            // $("#s-modal-component.ts-smc, .smco-track-shipment").addClass("opened-smc");
+            $("#s-modal-component.ts-smc, .smco-track-shipment").show(1500);
             window.scrollTo(0, 0);
         });
         $(".close-ts-smc").click(function(){
             $("html").removeClass("smc-opened");
             $("#s-modal-component.ts-smc, .smco-track-shipment").removeClass("opened-smc");
+            $("#s-modal-component.ts-smc, .smco-track-shipment").hide(1500);
         })
     }
 }
