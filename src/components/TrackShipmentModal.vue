@@ -112,6 +112,7 @@ export default {
         $(".t-p-trigger").click(function(){
             $("html").addClass("smc-opened");
             $("#s-modal-component.ts-smc, .smco-track-shipment").addClass("opened-smc");
+            window.scrollTo(0, 0);
         });
         $(".close-ts-smc").click(function(){
             $("html").removeClass("smc-opened");

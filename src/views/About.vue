@@ -9,6 +9,11 @@
               <h1 class="page-title">About Japtini Logisitcs</h1>
             </div>
             <img src="../assets/images/orange-red-icon-sqaure.svg" alt="icon" class="header-square-icon">
+
+            <TrackShipment />
+            <BookATruck />
+            <div class="s-modal-component-overlay smco-track-shipment"></div>
+            <div class="s-modal-component-overlay smco-book-truck"></div>
           </div>
         </div>
       </div>
@@ -16,7 +21,7 @@
     <!--=== end of Home Section ===-->
 
     <!--=== Who-We-Are Section ===-->
-    <section id="who-we-are">
+    <section id="who-we-are" class="scrollspy">
       <div class="row">
         <div class="container">
           <div class="wwa-wrapper">
@@ -132,9 +137,19 @@
 </template>
 
 <script>
+import TrackShipment from '../components/TrackShipmentModal.vue'
+import BookATruck from '../components/BookATruckModal.vue'
+
+import M from 'materialize-css'
 export default {
   name: 'About',
-  mounted() {}
+  components: {
+    TrackShipment, BookATruck
+  },
+  mounted() {
+    var elemsScrollspy = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(elemsScrollspy);
+  }
 }
 </script>
 

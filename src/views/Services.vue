@@ -9,6 +9,11 @@
               <h1 class="page-title">Our Services</h1>
             </div>
             <img src="../assets/images/orange-red-icon-sqaure.svg" alt="icon" class="header-square-icon">
+
+            <TrackShipment />
+            <BookATruck />
+            <div class="s-modal-component-overlay smco-track-shipment"></div>
+            <div class="s-modal-component-overlay smco-book-truck"></div>
           </div>
         </div>
       </div>
@@ -104,8 +109,14 @@
 </template>
 
 <script>
+import TrackShipment from '../components/TrackShipmentModal.vue'
+import BookATruck from '../components/BookATruckModal.vue'
+
 export default {
   name: 'Services',
+  components: {
+    TrackShipment, BookATruck
+  },
   mounted() {}
 }
 </script>

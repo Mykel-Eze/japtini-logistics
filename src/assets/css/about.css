@@ -1,5 +1,9 @@
+section#about-home {
+    transition: height 2s;
+}
 .home-title-wrapper {
     height: 300px;
+    transition: height 2s;
 }
 .home-title-block {
     top: auto;
@@ -46,6 +50,16 @@ img.header-square-icon {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 10;
+}
+
+.smc-opened section#about-home {
+    height: calc(100vh - 130px);
+    min-height: 550px;
+    position: relative;
+}
+.smc-opened section#about-home .home-title-wrapper {
+    height: calc(100vh - 130px);
 }
 
 /*---=== Services Page ===---*/

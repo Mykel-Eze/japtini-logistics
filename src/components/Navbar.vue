@@ -51,7 +51,7 @@
                         </button>
                     </li>
                     <li>
-                        <button class="pry-btn btn nav-btn modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
+                        <button class="pry-btn btn nav-btn batm-trigger" data-target="book-a-truck" @click="scrollToTop()">
                             <span>Book a Truck</span>
                         </button>
                     </li>
@@ -126,7 +126,7 @@
             <button class="sec-btn btn nav-btn sidenav-close t-p-trigger" @click="scrollToTop()">
                 <span>Track Package</span>
             </button>
-            <button class="pry-btn btn nav-btn sidenav-close modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
+            <button class="pry-btn btn nav-btn sidenav-close batm-trigger" @click="scrollToTop()">
                 <span>Book a Truck</span>
             </button>
         </li>
@@ -155,23 +155,21 @@
             </div>
         </div>
     </ul>
-    <BookATruck />
-    <EstimatedQuote />
-    <RequestSuccess />
+    <!-- <EstimatedQuote />
+    <RequestSuccess /> -->
   </div>
 </template>
 
 <script>
-import BookATruck from '../components/BookATruckModal.vue'
-import EstimatedQuote from '../components/EstimatedQuoteModal.vue'
-import RequestSuccess from '../components/RequestSuccessModal.vue'
+// import EstimatedQuote from '../components/EstimatedQuoteModal.vue'
+// import RequestSuccess from '../components/RequestSuccessModal.vue'
 
 import M from "materialize-css";
 // import $ from "jquery"; 
 export default {
   name: "Navbar",
   components: {
-      BookATruck, EstimatedQuote, RequestSuccess
+    //   EstimatedQuote, RequestSuccess
   },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {

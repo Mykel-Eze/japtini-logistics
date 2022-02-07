@@ -456,7 +456,7 @@ p.faq-answer {
     transition: transform 2s;
     transform: translateX(-100%);
 }
-.smco-track-shipment.opened-smc {
+.s-modal-component-overlay.opened-smc {
     transform: translateX(0);
 }
 .smco-track-shipment {

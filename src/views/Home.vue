@@ -29,8 +29,9 @@
             </div>
 
             <TrackShipment />
-
+            <BookATruck />
             <div class="s-modal-component-overlay smco-track-shipment"></div>
+            <div class="s-modal-component-overlay smco-book-truck"></div>
           </div>
         </div>
         <div class="home-sub-img-wrapper"></div>
@@ -345,12 +346,13 @@
 
 <script>
 import TrackShipment from '../components/TrackShipmentModal.vue'
+import BookATruck from '../components/BookATruckModal.vue'
 
 import M from 'materialize-css'
 export default {
   name: "Home",
   components: {
-    TrackShipment
+    TrackShipment, BookATruck
   },
   mounted() {
     var elemsCollapsible = document.querySelectorAll('.collapsible');

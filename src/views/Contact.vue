@@ -9,6 +9,11 @@
               <h1 class="page-title">Contact US</h1>
             </div>
             <img src="../assets/images/black-icon-square.svg" alt="icon" class="header-square-icon">
+
+            <TrackShipment />
+            <BookATruck />
+            <div class="s-modal-component-overlay smco-track-shipment"></div>
+            <div class="s-modal-component-overlay smco-book-truck"></div>
           </div>
         </div>
       </div>
@@ -107,8 +112,14 @@
 
 <script>
 import M from 'materialize-css'
+
+import TrackShipment from '../components/TrackShipmentModal.vue'
+import BookATruck from '../components/BookATruckModal.vue'
 export default {
   name: 'Contact',
+  components: {
+    TrackShipment, BookATruck
+  },
   mounted() {
       var elemsSelect = document.querySelectorAll('select');
         M.FormSelect.init(elemsSelect);

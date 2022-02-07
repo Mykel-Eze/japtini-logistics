@@ -10,7 +10,10 @@ div#s-modal-component {
     transition: transform 2s;
     transform: translateX(-110%);
 }
-div#s-modal-component.ts-smc.opened-smc {
+#about-home div#s-modal-component {
+    border-radius: 0px 24px 24px 0;
+}
+div#s-modal-component.opened-smc {
     transform: translateX(0);
 }
 /* div#s-modal-component::before {
@@ -31,7 +34,6 @@ div#s-modal-component.ts-smc.opened-smc {
 div#s-modal-component .s-modal {
     left: 0;
     right: auto;
-    top: 10px !important;
     bottom: auto;
     width: 100%;
     height: 100%;
@@ -43,6 +45,9 @@ div#s-modal-component .s-modal {
     position: absolute;
     right: 30px;
     top: 15px;
+    width: 100%;
+}
+.close-btn-wrapper > img {
     cursor: pointer;
 }
 img.caret-icon {
@@ -64,10 +69,13 @@ img.caret-icon {
     margin: auto;
     padding-top: 30px;
 }
-.mc-wrapper.mc-w-2 {
+.mc-wrapper.mc-wrapper-middle {
     position: relative;
-    top: 40%;
+    top: 35%;
     transform: translateY(-50%);
+}
+#mc-w-1.mc-wrapper.mc-wrapper-middle {
+    top: 40%;
 }
 h3.modal-title {
     margin-bottom: 5px;
@@ -82,7 +90,16 @@ h3.modal-title {
     box-sizing: border-box;
     border-radius: 10px;
 }
+p.modal-desc-txt.center {
+    color: #777777;
+}
 
+.phone-n-request-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 button.submit-modal-btn.btn {
     height: 46px;
     width: 100%;
@@ -103,10 +120,41 @@ button.submit-modal-btn.btn.sec-btn {
 button.submit-modal-btn.btn.sec-btn::before {
     border-radius: 5px;
 }
-.input-field.submit-modal-btn-wrapper {
-    margin-top: 30px;
+.theme-dark button.btn.sec-btn span {
+    color: #161616;
+}
+.theme-dark button.btn.sec-btn::before {
+    background-color: #FFFFFF;
+}
+.theme-dark button.btn.sec-btn:hover:before {
+    background-color: #161616
+}
+.theme-dark button.btn.sec-btn:hover span {
+    color: white;
 }
 
+.theme-light button.btn.sec-btn span {
+    color: #FFFFFF;
+}
+.theme-light button.btn.sec-btn::before {
+    background-color: #161616;
+}
+.theme-light button.btn.sec-btn:hover:before {
+    background-color: #FFFFFF;
+}
+.theme-light button.btn.sec-btn:hover span {
+    color: #161616;
+}
+span.modal-title-desc {
+    color: #777777;
+}
+.phone-n-request-wrapper button.submit-modal-btn.btn {
+    height: 57px;
+    border-radius: 10px;
+}
+.phone-n-request-wrapper button.submit-modal-btn.btn::before {
+    border-radius: 10px;
+}
 
 .flex-inp-wrapper {
     background: #FFFFFF;
@@ -263,12 +311,54 @@ img.back-arrow {
 }
 .modal-back-wrapper {
     cursor: pointer;
+    color: #6E7883;
+    opacity: 0;
+}
+#back-mc-1.modal-back-wrapper {
+    opacity: 1;
 }
 button.signup-btn.btn.pry-btn {
     width: 200px;
     height: 56px;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+form#modal-form {
+    padding-left: 20px;
+    position: relative;
+}
+span.field-node {
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border: 1.43px solid #E6E6E6;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    border-radius: 50%;
+}
+.theme-light .field-node {
+    background-color: #231F20;
+}
+span.field-node.active-node {
+    background: #F05A28;
+}
+span.field-node.last-node {
+    border-radius: 2px;
+}
+.node-line {
+    width: 1.2px;
+    height: calc(80% - 31px);
+    position: absolute;
+    left: -15px;
+    top: 31px;
+    background-color: #E6E6E6;
+    z-index: -1;
+}
+.node-line.longer-node-line {
+    height: calc(90% - 32px);
 }
 
 @media(max-width: 992px) {
@@ -294,6 +384,18 @@ button.signup-btn.btn.pry-btn {
         left: 13px;
         top: 12px;
     }
+
+    .phone-n-request-wrapper {
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+    .phone-n-request-wrapper > .input-field {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .mc-wrapper {
+        width: 70%;
+    }
 }
 @media(max-width: 600px) {
     div#s-modal-component .s-modal{
@@ -301,6 +403,10 @@ button.signup-btn.btn.pry-btn {
     }
     h3.modal-title {
         font-size: 52px !important;
+    }
+    .close-btn-wrapper {
+        right: 5px;
+        top: 5px;
     }
     .flex-div.flex-inp-wrapper {
         flex-direction: column;
@@ -332,5 +438,8 @@ button.signup-btn.btn.pry-btn {
         width: 100%;
         margin-bottom: 10px;
         max-width: initial;
+    }
+    .mc-wrapper {
+        width: 90%;
     }
 }

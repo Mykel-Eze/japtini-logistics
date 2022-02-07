@@ -131,11 +131,11 @@ ul#nav-mobile-2 {
 .switch-container {
     line-height: 1;
 }
-button.sec-btn.btn.nav-btn.modal-trigger {
+nav button.sec-btn.btn.nav-btn {
     margin-right: 9px;
     margin-left: 30px;
 }
-button.pry-btn.btn.nav-btn.modal-trigger {
+nav button.pry-btn.btn.nav-btn {
     margin-right: 12px;
     margin-left: 5px;
 }
@@ -203,6 +203,12 @@ button.pry-btn.btn.nav-btn.modal-trigger {
         border-bottom: none;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .sidenav li.contact-us-li button.nav-btn {
+        width: 100%;
+    }
+    .sidenav li.contact-us-li button.nav-btn:not(:last-child) {
+        margin-bottom: 5px;
     }
     .sidenav li.contact-us-li button.nav-pry-btn.btn.pointer {
         width: 100%;
