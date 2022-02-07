@@ -5,6 +5,9 @@ import Services from '../views/Services.vue'
 import Partner from '../views/Partner.vue'
 import Contact from '../views/Contact.vue'
 
+import Terms from '../views/Terms.vue'
+import Privacy from '../views/Privacy.vue'
+
 import Error404 from '../views/Error404.vue'
 
 const routes = [
@@ -32,6 +35,16 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: Privacy
+  },
+  {
+    path: '/terms',
+    name: 'Terms',
+    component: Terms
   },
   { path: '/:pathMatch(.*)*', beforeEnter: (to, from, next) => { next('/error') } },
   {

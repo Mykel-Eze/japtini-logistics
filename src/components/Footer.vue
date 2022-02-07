@@ -67,10 +67,10 @@
                       <div class="footer-sec-content">
                           <ul class="inq-list">
                                 <li>
-                                    <router-link to="#" class="">Privacy </router-link>
+                                    <router-link to="/privacy" class="" @click="scrollToTop()">Privacy </router-link>
                                 </li>
                                 <li>
-                                    <router-link to="#" class="">Terms and Conditions</router-link>
+                                    <router-link to="/terms" class="" @click="scrollToTop()">Terms and Conditions</router-link>
                                 </li>
                           </ul>
                       </div>
