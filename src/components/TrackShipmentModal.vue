@@ -1,9 +1,9 @@
 <template>
-    <div id="modal-component">
-        <div id="track-shipment" class="modal">
-            <div class="modal-content">
+    <div id="s-modal-component" class="ts-smc">
+        <div id="track-shipment" class="s-modal">
+            <div class="s-modal-content">
                 <div class="close-btn-wrapper right-align">
-                    <img src="../assets/images/modal-close.svg" alt="modal-close" class="modal-close">
+                    <img src="../assets/images/modal-close.svg" alt="s-modal-close" class="close-ts-smc">
                 </div>
                 <div class="mc-wrapper">
                     <div class="modal-title-wrapper">
@@ -12,7 +12,9 @@
                     <form action="#" id="track-modal-form">
                         <div class="flex-div flex-inp-wrapper">
                             <input type="text" id="tracking-number" name="tracking-number" required placeholder="Enter your tracking number" />
-                            <button class="submit-tracking-btn btn pry-btn">Track Package</button>
+                            <button class="submit-tracking-btn btn pry-btn">
+                                <span class="rel">Track Package</span>
+                            </button>
                         </div>
                     </form>
 
@@ -71,31 +73,33 @@
                                 <img src="../assets/images/notification.svg" alt="notification" class="notification-img" />
                             </div>
                             <div class="for-updates-btn">
-                                <button class="pry-btn btn s-u-btn">Sign Up</button>
+                                <button class="pry-btn btn s-u-btn">
+                                    <span class="rel">Sign Up</span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-  </div>
+    </div>
 </template>
 
 <script>
-import M from 'materialize-css'
+// import M from 'materialize-css'
 import $ from 'jquery'
 export default {
     name: "TrackShipment",
     mounted() {
-        var elemsModal = document.querySelectorAll('.modal');
-        M.Modal.init(elemsModal, {
-            onOpenStart: ()=> {
-                $('html').addClass("modal-opened");
-            },
-            onCloseStart: ()=> {
-                $('html').removeClass("modal-opened");
-            },
-        });
+        // var elemsModal = document.querySelectorAll('.modal');
+        // M.Modal.init(elemsModal, {
+        //     onOpenStart: ()=> {
+        //         $('html').addClass("modal-opened");
+        //     },
+        //     onCloseStart: ()=> {
+        //         $('html').removeClass("modal-opened");
+        //     },
+        // });
         $(".submit-tracking-btn").click(function(){
             event.preventDefault();
             if($("#tracking-number").val().length > 0) {
@@ -104,6 +108,15 @@ export default {
                 alert("Input a tracking number")
             }
         });
+
+        $(".t-p-trigger").click(function(){
+            $("html").addClass("smc-opened");
+            $("#s-modal-component.ts-smc, .smco-track-shipment").addClass("opened-smc");
+        });
+        $(".close-ts-smc").click(function(){
+            $("html").removeClass("smc-opened");
+            $("#s-modal-component.ts-smc, .smco-track-shipment").removeClass("opened-smc");
+        })
     }
 }
 </script>
@@ -118,6 +131,6 @@ h3.modal-title {
     font-weight: bold;
 }
 .mc-wrapper {
-    width: 80%;
+    width: 60%;
 }
 </style>

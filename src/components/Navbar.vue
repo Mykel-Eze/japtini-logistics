@@ -46,7 +46,7 @@
                 </ul>
                 <ul id="nav-mobile-2" class="right hide-on-med-and-down">
                     <li>
-                        <button class="sec-btn btn nav-btn modal-trigger" data-target="track-shipment" @click="scrollToTop()">
+                        <button class="sec-btn btn nav-btn t-p-trigger" data-target="track-shipment" @click="scrollToTop()">
                             <span>Track Package</span>
                         </button>
                     </li>
@@ -123,7 +123,7 @@
             </router-link>
         </li>
         <li class="contact-us-li">
-            <button class="sec-btn btn nav-btn sidenav-close modal-trigger" data-target="track-shipment" @click="scrollToTop()">
+            <button class="sec-btn btn nav-btn sidenav-close t-p-trigger" @click="scrollToTop()">
                 <span>Track Package</span>
             </button>
             <button class="pry-btn btn nav-btn sidenav-close modal-trigger" data-target="book-a-truck" @click="scrollToTop()">
@@ -156,7 +156,6 @@
         </div>
     </ul>
     <BookATruck />
-    <TrackShipment />
     <EstimatedQuote />
     <RequestSuccess />
   </div>
@@ -164,7 +163,6 @@
 
 <script>
 import BookATruck from '../components/BookATruckModal.vue'
-import TrackShipment from '../components/TrackShipmentModal.vue'
 import EstimatedQuote from '../components/EstimatedQuoteModal.vue'
 import RequestSuccess from '../components/RequestSuccessModal.vue'
 
@@ -173,7 +171,7 @@ import M from "materialize-css";
 export default {
   name: "Navbar",
   components: {
-      BookATruck, TrackShipment, EstimatedQuote, RequestSuccess
+      BookATruck, EstimatedQuote, RequestSuccess
   },
   mounted() {
     document.addEventListener("DOMContentLoaded", function() {

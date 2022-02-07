@@ -444,6 +444,35 @@ p.faq-answer {
     color: #777777;
 }
 
+.s-modal-component-overlay {
+    position: absolute;
+    width: 125%;
+    height: 100%;
+    border-radius: 0px 48px 48px 0px;
+    background: #231F20;
+    top: 0;
+    left: -25%;
+    z-index: 1;
+    transition: transform 2s;
+    transform: translateX(-100%);
+}
+.smco-track-shipment.opened-smc {
+    transform: translateX(0);
+}
+.smco-track-shipment {
+    background-image: url(../images/map-bg.png);
+    background-size: contain;
+    background-position: right;
+}
+.theme-dark .s-modal-component-overlay {
+    background-color: #FFFFFF;
+}
+
+.smc-opened button.nav-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 @media(max-width: 600px) {
     section#faq {
         margin: 50px 0;

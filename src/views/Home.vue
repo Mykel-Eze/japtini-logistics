@@ -27,6 +27,10 @@
                 <img src="../assets/images/arr-down.svg" alt="down arrow" class="arrow-down">
               </div>
             </div>
+
+            <TrackShipment />
+
+            <div class="s-modal-component-overlay smco-track-shipment"></div>
           </div>
         </div>
         <div class="home-sub-img-wrapper"></div>
@@ -340,9 +344,14 @@
 </template>
 
 <script>
+import TrackShipment from '../components/TrackShipmentModal.vue'
+
 import M from 'materialize-css'
 export default {
   name: "Home",
+  components: {
+    TrackShipment
+  },
   mounted() {
     var elemsCollapsible = document.querySelectorAll('.collapsible');
     M.Collapsible.init(elemsCollapsible)
