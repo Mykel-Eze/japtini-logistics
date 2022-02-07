@@ -39,17 +39,17 @@
                                             <b>Japtini Logistics</b>
                                         </li>
                                         <li>
-                                            <span>Tel: <a href="tel:09023443323" class="gc-link">0902 344 3323</a></span>
+                                            <span>Tel: <a href="tel:+2348146889913" class="gc-link">+234 814 688 9913</a></span>
                                         </li>
                                         <li>
-                                            <span>Whatsapp: <a href="https://api.whatsapp.com/send?phone=+23481423221123" class="gc-link">08142 322 1123</a></span>
+                                            <span>Whatsapp: <a href="https://api.whatsapp.com/send?phone=+2348146889913" class="gc-link">+234 814 688 9913</a></span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="gc-block gc-2">
                                     <div class="flex-div">
                                         <img src="../assets/images/envelope.svg" alt="mail" class="gc-icon">
-                                        <a href="mailto:enquiry@japtinilogistics.com" class="gc-link">enquiry@JaptiniLogistics.com</a>
+                                        <a href="mailto:enquiry@japtinilogistics.com" class="gc-link">enquiries@JaptiniLogistics.com</a>
                                     </div>
                                     <div class="flex-div">
                                         <img src="../assets/images/clock.svg" alt="time" class="gc-icon">
