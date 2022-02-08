@@ -157,23 +157,23 @@
     <!--=== end of Become-A-Partner Section ===-->
 
     <!--=== Customer-Reviews Section ===-->
-    <section id="customer-reviews" hidden>
+    <section id="customer-reviews">
       <div class="row">
         <div class="container">
           <div class="">
-            <h2 class="section-header">What Customer Say About Us.</h2>
+            <h2 class="section-header">Use What Customers Say About Us.</h2>
           </div>
-          <ul class="collapsible">
-            <li class="active orange-li-bg">
-              <div class="collapsible-header">
+          <ul class="s-collapsible">
+            <li class="active-collapsible orange-li-bg">
+              <div class="s-collapsible-header">
                 <small class="testimony-num">01</small>
                 Customer <br> Satisfaction
               </div>
-              <div class="collapsible-body">
+              <div class="s-collapsible-body">
                 <div class="testimony-details">
                   <div class="testimony-txt">
-                    Navigating the complex world of manufacturing can be cumbersome and overwhelming. Let’s save you time, 
-                    money, and stress by easing that burden 
+                    Use One thing Japtini Logistics has added to my business is credibility. My customers are more loyal 
+                    because they trust that packages will get to them in good time. Nothing beats this!
                   </div>
                   <div class="testifier-details flex-div">
                     <div class="testifier-avatar">
@@ -188,15 +188,15 @@
               </div>
             </li>
             <li class="orange-red-li-bg">
-              <div class="collapsible-header">
+              <div class="s-collapsible-header">
                 <small class="testimony-num">02</small>
                 Realtime <br> Update
               </div>
-              <div class="collapsible-body">
+              <div class="s-collapsible-body">
                 <div class="testimony-details">
                   <div class="testimony-txt">
-                    Navigating the complex world of manufacturing can be cumbersome and overwhelming. Let’s save you 
-                    time, money, and stress by easing that burden 
+                    I needed a storage warehousing facility with ample floor space and flexible operations. 
+                    I found all of this and more with Japtini Logistics.
                   </div>
                   <div class="testifier-details flex-div">
                     <div class="testifier-avatar">
@@ -211,15 +211,15 @@
               </div>
             </li>
             <li class="black-li-bg">
-              <div class="collapsible-header">
+              <div class="s-collapsible-header">
                 <small class="testimony-num">03</small>
                 Good <br> Management
               </div>
-              <div class="collapsible-body">
+              <div class="s-collapsible-body">
                 <div class="testimony-details">
                   <div class="testimony-txt">
-                    Navigating the complex world of manufacturing can be cumbersome and overwhelming. 
-                    Let’s save you time, money, and stress by easing that burden 
+                    Fast, low-cost delivery and the full availability of options is something I knew could scale my business 
+                    significantly. Japtini Logistics even offers a haulage service that is swift and effective.
                   </div>
                   <div class="testifier-details flex-div">
                     <div class="testifier-avatar">
@@ -349,6 +349,7 @@ import TrackShipment from '../components/TrackShipmentModal.vue'
 import BookATruck from '../components/BookATruckModal.vue'
 
 import M from 'materialize-css'
+import $ from 'jquery'
 export default {
   name: "Home",
   components: {
@@ -356,7 +357,17 @@ export default {
   },
   mounted() {
     var elemsCollapsible = document.querySelectorAll('.collapsible');
-    M.Collapsible.init(elemsCollapsible)
+    M.Collapsible.init(elemsCollapsible);
+
+    $(".s-collapsible-header").hover(function(){
+      $(".s-collapsible-header").parent().removeClass("active-collapsible");
+      $(this).parent().addClass("active-collapsible");
+    });
+
+    if (window.matchMedia("(min-width: 993px)").matches) {
+      var active_height = $(".active-collapsible .s-collapsible-header").height();
+      $(".s-collapsible-body:not('.active-collapsible') .testimony-details").height(active_height + 20);
+    }
   },
   methods:{
     scrollToTop() {

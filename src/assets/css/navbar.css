@@ -143,6 +143,8 @@ nav button.pry-btn.btn.nav-btn {
     cursor: pointer;
     position: relative;
     top: 3px;
+    border: none;
+    background: transparent;
 }
 
 .sidenav .switch-container {

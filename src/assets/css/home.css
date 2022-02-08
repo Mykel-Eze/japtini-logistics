@@ -310,52 +310,96 @@ button.btn.pry-btn.partner-btn {
 
 /* Customer-Reviews Section */
 #customer-reviews h2.section-header {
-    max-width: 620px;
+    max-width: 500px;
     text-align: left;
     margin-left: 0;
 }
-#customer-reviews ul.collapsible {
+#customer-reviews ul.s-collapsible {
     border-radius: 24px;
     overflow: hidden;
     box-shadow: none;
     border: none;
-    transform: rotate(90deg);
+    display: flex;
+    flex-direction: row;
 }
-li.orange-li-bg, li.orange-li-bg .collapsible-header {
-    background-color: #F7941D;
-    color: white;
+ul.s-collapsible > li {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    min-width: min-content;
+    /* height: 370px; */
 }
-li.orange-red-li-bg, li.orange-red-li-bg .collapsible-header {
-    background-color: #EF4133;
-    color: white;
-}
-li.black-li-bg, li.black-li-bg .collapsible-header {
-    background-color: #000000;
-    color: white;
-}
-#customer-reviews .collapsible-header {
+/* ul.s-collapsible > li.active-collapsible {
+    flex-grow: 1;
+    flex-shrink: 0;
+} */
+ul.s-collapsible .s-collapsible-header {
+    cursor: pointer;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
     font-weight: 600;
+    display: flex;
     align-items: flex-end;
     font-size: 37px;
     line-height: 33px;
     border: none;
     padding: 25px;
 }
-#customer-reviews .collapsible-body {
-    border: none;
+/* .active-collapsible .s-collapsible-header {
+    pointer-events: none;
+} */
+li.orange-li-bg, li.orange-li-bg .s-collapsible-header {
+    background-color: #F7941D;
+    color: white;
 }
-.testimony-details {
-    width: 90%;
+li.orange-red-li-bg, li.orange-red-li-bg .s-collapsible-header {
+    background-color: #EF4133;
+    color: white;
+}
+li.black-li-bg, li.black-li-bg .s-collapsible-header {
+    background-color: #000000;
+    color: white;
+}
+.s-collapsible-body {
+    border: none;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    transition: width 0.35s linear;
+    min-height: 200px;
+}
+.active-collapsible .s-collapsible-body {
+    padding: 50px 20px 40px;
+    width: 100%;
+}
+/* .testimony-details {
+    width: 85%;
     margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+.testimony-details {
+    width: 85%;
+    margin: auto;
+    position: absolute;
+}
+.active-collapsible .s-collapsible-body .testimony-details {
+    position: relative;
 }
 small.testimony-num {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 5px;
+    margin-bottom: 5px;
 }
 .testimony-txt {
     font-size: 22px;
-    line-height: 29px;
+    line-height: 32px;
 }
 .testifier-details.flex-div {
     margin: 50px 0 10px;
@@ -376,6 +420,41 @@ img.customer-img {
 .testifier-avatar {
     max-width: 115px;
     margin-right: 15px;
+}
+@media(max-width: 992px) {
+    #customer-reviews ul.s-collapsible {
+        flex-direction: column;
+    }
+    ul.s-collapsible > li {
+        flex-direction: column;
+    }
+    ul.s-collapsible .s-collapsible-header {
+        transform: none;
+        writing-mode: initial;
+    }
+    .s-collapsible-body {
+        min-height: auto;
+        width: 100%;
+        height: 0;
+    }
+    .s-collapsible-body {
+        width: 100%;
+        height: 0;
+        max-height: 0;
+        transition: max-height 1.35s linear;
+    }
+    .active-collapsible .s-collapsible-body {
+        height: 100%;
+        max-height: 1000px;
+    }
+    .testimony-details {
+        width: 95%;
+    }
+    .testifier-avatar {
+        max-width: 100px;
+    }
+}
+@media(max-width: 600px) {
 }
 /* end of Customer-Reviews Section */
 
