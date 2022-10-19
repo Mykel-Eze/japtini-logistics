@@ -48,6 +48,11 @@ h1.home-title {
     margin: 0;
     color: white;
 }
+.home-title-desc {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
 img.home-section-img {
     position: absolute;
     width: 40%;
@@ -164,6 +169,9 @@ img.arrow-down {
 /* end of Home section */
 
 /* About Section */
+section#about {
+    margin-bottom: 80px;
+}
 .section-title {
     font-weight: 600;
     font-size: 18px;
@@ -171,7 +179,8 @@ img.arrow-down {
     color: #777777;
 }
 h2.section-header {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-family: var(--sec-font-bold);
     font-size: 50px;
     line-height: 0.95;
     color: #161616;
@@ -183,6 +192,34 @@ p.section-desc {
     line-height: 28px;
     letter-spacing: -0.01em;
     color: #777777;
+}
+.line-divider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 20px;
+}
+hr.fancy-line {
+    width: 100%;
+    border: none;
+    height: 3px;
+    background: #F6921E;
+}
+.line-divider-wrapper .section-title {
+    width: 100%;
+    text-align: center;
+}
+img.dashboard-screenshot-img {
+    width: 80%;
+}
+
+@media(max-width: 600px) {
+    section#about {
+        margin-bottom: 40px;
+    }
+    img.dashboard-screenshot-img {
+        width: 100%;
+    }
 }
 /* end of About Section */
 
@@ -275,6 +312,12 @@ ul.custom-list li {
 img.tick-icon {
     width: 50px;
 }
+.logisitcs-routes-txt .section-title {
+    margin-bottom: 25px;
+}
+.logisitcs-routes-txt {
+    margin-top: 50px;
+}
 
 @media(min-width: 993px) {
     .logisitcs-routes-txt .section-header {
@@ -282,6 +325,9 @@ img.tick-icon {
         max-width: 400px;
         margin-left: 0;
         line-height: 1;
+    }
+    .logisitcs-routes-txt {
+        margin-top: 100px;
     }
 }
 @media(max-width: 600px) {
@@ -292,6 +338,9 @@ img.tick-icon {
 /* end of Logistics-Routes Section */
 
 /* Become-A-Partner Section */
+section#become-a-partner {
+    margin: 70px 0 60px;
+}
 section#become-a-partner h2.section-header {
     max-width: 785px;
 }
@@ -469,6 +518,7 @@ section#faq {
 .flex-div.faq-question {
     justify-content: space-between;
     width: 100%;
+    font-weight: bold;
 }
 .accordion-open {
     display: block;

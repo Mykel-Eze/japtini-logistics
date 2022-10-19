@@ -7,8 +7,13 @@
           <div class="home-title-wrapper">
             <div class="home-title-block">
               <h1 class="home-title">
-                Using digital technology to solve logistical inefficiencies for businesses
+                More than logistics...
               </h1>
+              <div class="home-title-desc">
+                Japtini Logistics offers the best warehousing and transportation services using digitized
+                inventory management tools to carry out seamlessly automated deliveries across haulage
+                channels within Africa.
+              </div>
               <div class="flex-div get-started-wrapper">
                 <button class="pry-btn btn home-btn modal-trigger" data-target="book-a-truck">
                   <span class="rel">Get Started</span>
@@ -43,16 +48,13 @@
     <section id="about">
       <div class="row">
         <div class="container">
-          <div class="center">
-            <div class="section-title">ABOUT US</div>
-            <h2 class="section-header">We are more than a logistics company</h2>
+          <div class="center col s12 l10 offset-l1 pad0">
+            <!-- <div class="section-title">ABOUT US</div> -->
+            <h2 class="section-header">About Japtini logistics</h2>
             <p class="section-desc">
-              We believe everyone should be able to enjoy ease of transporting items, without regard for location 
-              boundaries, or even company status. 
-            </p>
-            <p class="section-desc">
-              Using <b>reverse logistics</b> and <b>cutting-edge technology</b>, with the end goal of reducing the cost of goods 
-              and services by over 30%, we also created an ecosystem to search, compare and book warehouse space.
+              We believe everyone should enjoy the ease of transporting goods or services, without regard to location boundaries
+              or company status. Using reverse logistics and cutting-edge technology, we have developed digital platforms that
+              match supply with demand, be it haulage, warehousing, etc. Thereby reducing the cost of goods and services by over 30%.
             </p>
           </div>
         </div>
@@ -64,26 +66,40 @@
     <section id="services">
       <div class="row">
         <div class="container">
-          <div class="services-block-wrapper">
+          <div class="center col s12 l10 offset-l1 pad0">
+            <h2 class="section-header">The gap we fill</h2>
+            <p class="section-desc">
+              With a significant number of the African population disconnected from chain supply, bridging this gap not just
+              in Nigeria but across Africa, is a key focus for Japtini logistics. 
+            </p>
+          </div>
+          <div class="line-divider-wrapper col s12 m8 offset-m2 pad0">
+            <hr class="fancy-line" />
+            <div class="section-title">OUR OFFERINGS</div>
+            <hr class="fancy-line" />
+          </div>
+          <div class="services-block-wrapper col s12 pad0">
             <div class="services-block">
-              <h4 class="services-block-title">Transport Services</h4>
+              <h4 class="services-block-title">Transportation </h4>
               <p class="services-desc">
-                At Japtini Logistics, we believe that providing our customers with results based on their individual 
-                expectations is fundamental.
+                Logistics and Transportation are key to economic growth and directly impact the development of other
+                sectors. It is for this reason that Japtini Logistics, leveraging the opportunities provided by technology,
+                has developed an innovative system for meeting the logistics and distribution needs of its customers.
               </p>
             </div>
             <div class="services-block">
               <h4 class="services-block-title">Warehousing and Distribution</h4>
               <p class="services-desc">
-                We have the facilities, needed expertise and ample knowledge and we use all these to help you find 
-                different logistics and distribution solutions with us.
+                Our facilities, expertise and ample knowledge of the industry aid our decision-making on the best way
+                to serve your storage and distribution needs. We have facilities, expertise, and requisite knowledge to
+                provide solutions to any logistics and distribution challenges.
               </p>
             </div>
             <div class="services-block">
               <h4 class="services-block-title">Technology</h4>
               <p class="services-desc">
-                At Japtini Logistics we are continuously investing in the very latest technologies to optimise the 
-                numerous services we provide. 
+                At Japtini Logistics we are continuously investing in modern technology to optimize the numerous services
+                we provide. Using a wide range of digital technologies for haulage and delivery.
               </p>
             </div>
           </div>
@@ -97,35 +113,16 @@
       <div class="row">
         <div class="container">
           <div class="col s12 m6 logisitcs-routes-img">
-            <div class="lorries-img-div">
-              <img src="../assets/images/lorries.png" alt="lorries" class="lorries-img full-width light-mode-item">
-              <img src="../assets/images/lorries-dark.png" alt="lorries" class="lorries-img full-width dark-mode-item">
-            </div>
+            <img src="../assets/images/dashboard-screenshot-3.png" alt="dashbaord-screenshot" class="dashboard-screenshot-img">
           </div>
           <div class="col s12 m6 logisitcs-routes-txt">
-            <h2 class="section-header">Our Logistics Routes Include</h2>
-            <ul class="custom-list">
-              <li class="flex-div">
-                <img src="../assets/images/tick-icon.svg" alt="tick" class="tick-icon">
-                <span>24 hour Nationwide delivery</span>
-              </li>
-              <li class="flex-div">
-                <img src="../assets/images/tick-icon.svg" alt="tick" class="tick-icon">
-                <span>Overnight transportation for onward delivery</span>
-              </li>
-              <li class="flex-div">
-                <img src="../assets/images/tick-icon.svg" alt="tick" class="tick-icon">
-                <span>Full load/part load nationwide</span>
-              </li>
-              <li class="flex-div">
-                <img src="../assets/images/tick-icon.svg" alt="tick" class="tick-icon">
-                <span>Full Haulage services</span>
-              </li>
-              <li class="flex-div">
-                <img src="../assets/images/tick-icon.svg" alt="tick" class="tick-icon">
-                <span>Full scale leasing services</span>
-              </li>
-            </ul>
+            <div class="section-title">OUR PROCESS</div>
+            <h2 class="section-header">Satisfying and efficient</h2>
+            <p class="section-desc">
+              With a duty to satisfy our customers, we offer optimized storage system, providing efficient warehousing
+              and transportation services with the use of digitized inventory management tools, reverse logistics, and
+              cutting-edge technology for route mapping and optimized delivery.
+            </p>
           </div>
         </div>
       </div>
@@ -139,10 +136,6 @@
           <div class="center">
             <div class="section-title">WHY PARTNER WITH US</div>
             <h2 class="section-header"> Benefiting from the enormous appeal of logistics</h2>
-            <p class="section-desc">
-              We believe everyone should be able to enjoy ease of transporting items, without regard for location 
-              boundaries, or even company status. 
-            </p>
             <div class="partner-btn-wrapper">
               <router-link to="/partner" @click="scrollToTop()">
                 <button class="btn pry-btn partner-btn">
@@ -161,7 +154,7 @@
       <div class="row">
         <div class="container">
           <div class="">
-            <h2 class="section-header">Use What Customers Say About Us.</h2>
+            <h2 class="section-header">What Our Customers Say About Us.</h2>
           </div>
           <ul class="s-collapsible">
             <li class="active-collapsible orange-li-bg">
